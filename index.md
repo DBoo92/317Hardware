@@ -17,6 +17,6 @@ You can see the submitted [project proposal](https://github.com/DBoo92/317Hardwa
 
 You can view the propsed [project schedule](https://github.com/DBoo92/317Hardware/blob/master/documentation/schedule/Project1.pdf)
 
-Proposal and schedule files placed into nested folders within Documentation.
+Proposal and schedule files moved into nested folders inside Documentation folder.
 
 
