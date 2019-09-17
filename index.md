@@ -5,7 +5,7 @@ Capstone Project - Greenhouse Monitoring System
 
 Repository created at 2:42 PM.
 
-Group has been selected. Ryan and Daniel for 317 Hardware. Ryan, Aiden, and Daniel for 319 Software.
+Group has been selected. Ryan, Aiden, and Daniel for 317 Hardware and 319 Software.
 Selected project is Greenhouse.
 
 
