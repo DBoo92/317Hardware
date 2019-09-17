@@ -15,6 +15,6 @@ You can see the submitted [project proposal](https://github.com/DBoo92/317Hardwa
 
 ### September 17, 2019 - Schedule Due
 
-You can view the [proposed schedule](https://github.com/DBoo92/317Hardware/blob/master/documentation/Project1.pdf)
+You can view the propsed [project schedule](https://github.com/DBoo92/317Hardware/blob/master/documentation/Project1.pdf)
 
 
