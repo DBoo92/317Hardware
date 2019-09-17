@@ -11,7 +11,7 @@ Selected project is Greenhouse.
 
 ### September 10, 2019 - Proposal Due
 
-You can see the submitted [project proposal] (https://github.com/DBoo92/317Hardware/blob/master/documentation/proposal/ProposalContentStudentNameRev03.pdf)
+You can see the submitted [project proposal](https://github.com/DBoo92/317Hardware/blob/master/documentation/proposal/ProposalContentStudentNameRev03.pdf)
 
 
 ### September 17, 2019 - Schedule Due
