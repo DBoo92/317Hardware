@@ -3,7 +3,7 @@ Capstone Project - Greenhouse Monitoring System
 
 ### September 17, 2019 - Schedule Due
 
-Here you can view the propsed [project schedule pdf](https://github.com/DBoo92/317Hardware/blob/master/documentation/schedule/Project1.pdf) or [Microsoft Project file](https://github.com/DBoo92/317Hardware/blob/master/documentation/schedule/Project1.mpp).
+Here you can view the proposed [project schedule](https://github.com/DBoo92/317Hardware/blob/master/documentation/schedule/Project1.pdf) pdf or [Microsoft Project file](https://github.com/DBoo92/317Hardware/blob/master/documentation/schedule/Project1.mpp).
 
 *Repository edit: Proposal and schedule files moved into nested folders inside Documentation folder.
 
