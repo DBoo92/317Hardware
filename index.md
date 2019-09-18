@@ -7,6 +7,8 @@ You can view the propsed [project schedule pdf](https://github.com/DBoo92/317Har
 
 Proposal and schedule files moved into nested folders inside Documentation folder.
 
+Met with our project sponsor (Valeria) and received great feedback regarding different features we can implement/how to implement. Meeting report to follow soon.
+
 
 ### September 10, 2019 - Proposal Due
 
