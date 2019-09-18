@@ -5,7 +5,7 @@ Capstone Project - Greenhouse Monitoring System
 
 Here you can view the propsed [project schedule pdf](https://github.com/DBoo92/317Hardware/blob/master/documentation/schedule/Project1.pdf) or [Microsoft Project file](https://github.com/DBoo92/317Hardware/blob/master/documentation/schedule/Project1.mpp).
 
-*Change: Proposal and schedule files moved into nested folders inside Documentation folder.
+*Repository edit: Proposal and schedule files moved into nested folders inside Documentation folder.
 
 Met with our project sponsor (Valeria) and received great feedback regarding different features we can implement/how to implement. Meeting report to follow soon.
 
