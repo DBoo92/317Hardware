@@ -5,7 +5,9 @@ Capstone Project - Greenhouse Monitoring System
 
 Click on the [budget](https://github.com/DBoo92/317Hardware/blob/master/documentation/budget/GreenhouseBudget.xlsx) to view the projected costs.
 
-I'm still undecided about whether to use a Raspberry Pi or a Blue Pill as a platform. I will discuss this with the professor today and weigh the pros/cons. Also, whether to use a relay, transistor, or code to turn the effector on/off.
+Need to discuss with the professor today whether to use a relay, transistor, or code to turn the effector on/off.
+
+Decided on capacitive moisture sensor instead of resistive, due to more accurate readings and corrosion resistance. Have sourced the Gikfun EK1940 from [Amazon](https://www.amazon.ca/Gikfun-Capacitive-Corrosion-Resistant-Detection/dp/B07H3P1NRM/ref=sr_1_1_sspa?keywords=capacitive+soil&qid=1569351693&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyNzJZWjNOOEFLM0E0JmVuY3J5cHRlZElkPUEwNjg0MjI4Ukg0RVgxWUdTMktNJmVuY3J5cHRlZEFkSWQ9QTA0MDYyODNFOUpQM0hWM1I3QVUmd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl)
 
 
 ### September 17, 2019 - Schedule Due
