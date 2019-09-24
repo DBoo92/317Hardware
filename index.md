@@ -1,6 +1,11 @@
 Capstone Project - Greenhouse Monitoring System
 -----------------------------------------------
 
+### September 24, 2019 - Budget Due
+
+Click on the [budget](https://github.com/DBoo92/317Hardware/blob/master/documentation/budget/GreenhouseBudget.xlsx) to view the projected costs.
+
+
 ### September 17, 2019 - Schedule Due
 
 Here you can view the proposed [project schedule](https://github.com/DBoo92/317Hardware/blob/master/documentation/schedule/Project1.pdf) pdf or [Microsoft Project file](https://github.com/DBoo92/317Hardware/blob/master/documentation/schedule/Project1.mpp).
