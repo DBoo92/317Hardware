@@ -5,7 +5,7 @@ Capstone Project - Greenhouse Monitoring System
 
 Click on the [budget](https://github.com/DBoo92/317Hardware/blob/master/documentation/budget/GreenhouseBudget.xlsx) to view the projected costs.
 
-I'm still undecided about whether to use a Raspberry Pi or a Blue Pill as a platform. I will discuss this with the professor today and weigh the pros/cons.. Also, whether to use a relay, transistor, or code to turn the effector on/off.
+I'm still undecided about whether to use a Raspberry Pi or a Blue Pill as a platform. I will discuss this with the professor today and weigh the pros/cons. Also, whether to use a relay, transistor, or code to turn the effector on/off.
 
 
 ### September 17, 2019 - Schedule Due
