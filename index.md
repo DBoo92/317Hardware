@@ -14,11 +14,11 @@ I have decided to choose the Raspberry Pi 4 instead of the 3 B+. Over the last w
 
 ### September 24, 2019 - Budget Due
 
-Click on the [budget](https://github.com/DBoo92/317Hardware/blob/master/documentation/budget/GreenhouseBudget.xlsx) to view the projected costs.
+Click on the [budget](https://github.com/DBoo92/317Hardware/blob/master/documentation/budget/GreenhouseBudget.pdf) to view the projected costs.
 
-Need to discuss with the professor today whether to use a relay, transistor, or code to turn the effector on/off.
+Need to discuss with the professor today whether to use a relay, transistor, or code to turn the effector on/off. *UPDATE* Kristian has suggested speaking to Kelly or Vlad regarding this
 
-Decided on capacitive moisture sensor instead of resistive, due to more accurate readings and corrosion resistance. Have sourced the Gikfun EK1940 from [Amazon](https://www.amazon.ca/Gikfun-Capacitive-Corrosion-Resistant-Detection/dp/B07H3P1NRM/ref=sr_1_1_sspa?keywords=capacitive+soil&qid=1569351693&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyNzJZWjNOOEFLM0E0JmVuY3J5cHRlZElkPUEwNjg0MjI4Ukg0RVgxWUdTMktNJmVuY3J5cHRlZEFkSWQ9QTA0MDYyODNFOUpQM0hWM1I3QVUmd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl).
+Decided on the capacitive moisture sensor instead of resistive, due to more accurate readings and corrosion resistance. Have sourced the Gikfun EK1940 from [Amazon](https://www.amazon.ca/Gikfun-Capacitive-Corrosion-Resistant-Detection/dp/B07H3P1NRM/ref=sr_1_1_sspa?keywords=capacitive+soil&qid=1569351693&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyNzJZWjNOOEFLM0E0JmVuY3J5cHRlZElkPUEwNjg0MjI4Ukg0RVgxWUdTMktNJmVuY3J5cHRlZEFkSWQ9QTA0MDYyODNFOUpQM0hWM1I3QVUmd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl).
 
 
 ### September 17, 2019 - Schedule Due
