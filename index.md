@@ -5,7 +5,7 @@ Capstone Project - Greenhouse Monitoring System
 
 The Raspberry Pi 4, capacitive soil sensor, and diaphragm pump have been ordered from Amazon:
 
-![Image of order](https://github.com/DBoo92/317Hardware/blob/master/images/partsorder.png)
+![Image of order](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/partsorder.png)
 
 I will be picking up some of the other components (headers, jumper connectors, spray nozzle, fittings, etc) from Sayal Electronics and Princess Auto during this week.
 
