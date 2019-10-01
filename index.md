@@ -1,5 +1,5 @@
-Capstone Project - Greenhouse Monitoring System
-_____
+#Capstone Project - Greenhouse Monitoring System
+-----
 
 ### October 1, 2019 - Parts Ordered
 
