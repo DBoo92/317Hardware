@@ -3,8 +3,13 @@ Capstone Project - Greenhouse Monitoring System
 
 ### October 1, 2019 - Parts Ordered
 
+The Raspberry Pi 4, capacitive soil sensor, and diaphragm pump have been ordered from Amazon:
 
-The Raspberry Pi 4, capacitive soil sensor, and diaphragm pump have been ordered from ![Amazon.ca](https://github.com/DBoo92/317Hardware/blob/master/images/partsorder.png)
+![Image of order](https://github.com/DBoo92/317Hardware/blob/master/images/partsorder.png)
+
+I will be picking up some of the other components (headers, jumper connectors, spray nozzle, fittings, etc) from Sayal Electronics and Princess Auto during this week.
+
+I have decided to choose the Raspberry Pi 4 instead of the 3 B+. Over the last week I have done some research/comparison of the two models. The Pi 4 has a noticeable edge over its predecessor in processing power, memory, GPU performance, microSD card read/write speeds, and networking speed. All of this for a modest price increase. While there are still few small bugs with the model 4 (which shouldn't affect this project), it made more sense for future proofing and long term reusability.
 
 
 ### September 24, 2019 - Budget Due
