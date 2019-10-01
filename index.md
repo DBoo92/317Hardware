@@ -16,16 +16,18 @@ I have decided to choose the Raspberry Pi 4 instead of the 3 B+. Over the last w
 
 Click on the [budget](https://github.com/DBoo92/317Hardware/blob/master/documentation/budget/GreenhouseBudget.pdf) to view the projected costs.
 
-Need to discuss with the professor today whether to use a relay, transistor, or code to turn the effector on/off. *UPDATE* Kristian has suggested speaking to Kelly or Vlad regarding this
+Need to discuss with the professor today whether to use a relay, transistor, or code to turn the effector on/off. **UPDATE** Kristian has suggested speaking to Kelly or Vlad regarding this.
 
-Decided on the capacitive moisture sensor instead of resistive, due to more accurate readings and corrosion resistance. Have sourced the Gikfun EK1940 from [Amazon](https://www.amazon.ca/Gikfun-Capacitive-Corrosion-Resistant-Detection/dp/B07H3P1NRM/ref=sr_1_1_sspa?keywords=capacitive+soil&qid=1569351693&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyNzJZWjNOOEFLM0E0JmVuY3J5cHRlZElkPUEwNjg0MjI4Ukg0RVgxWUdTMktNJmVuY3J5cHRlZEFkSWQ9QTA0MDYyODNFOUpQM0hWM1I3QVUmd2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl).
+Decided on the capacitive moisture sensor instead of resistive, due to more accurate readings and corrosion resistance. I have sourced the Gikfun EK1940 from [Amazon](https://www.amazon.ca/gp/product/B07H3P1NRM/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1).
+
+I will also be incorporating a pump/nozzle system to spray water on the soil when moisture readings are low. I will be using the Gikgun EK1856C from [Amazon](https://www.amazon.ca/gp/product/B0744DL1S9/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1).
 
 
 ### September 17, 2019 - Schedule Due
 
-Here you can view the proposed [project schedule](https://github.com/DBoo92/317Hardware/blob/master/documentation/schedule/Project1.pdf) pdf or [Microsoft Project file](https://github.com/DBoo92/317Hardware/blob/master/documentation/schedule/Project1.mpp).
+Here you can view the proposed [project schedule pdf](https://github.com/DBoo92/317Hardware/blob/master/documentation/schedule/Project1.pdf) or [Microsoft Project file](https://github.com/DBoo92/317Hardware/blob/master/documentation/schedule/Project1.mpp) if you have the software.
 
-*Repository edit: Proposal and schedule files moved into nested folders inside Documentation folder.
+**Repository edit: Proposal and schedule files moved into nested folders inside Documentation folder.
 
 Met with our project sponsor (Valeria) and received great feedback regarding different features we can implement/how to implement. Meeting report to follow soon.
 
