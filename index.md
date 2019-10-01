@@ -3,7 +3,7 @@ Capstone Project - Greenhouse Monitoring System
 
 ### October 1, 2019 - Parts Ordered
 
-The Raspberry Pi 4, capacitive soil sensor, and diaphragm pump have been ordered from Amazon.ca
+The Raspberry Pi 4, capacitive soil sensor, and diaphragm pump have been ordered from ![Amazon.ca](https://github.com/DBoo92/317Hardware/blob/master/images/partsorder.png)
 
 
 ### September 24, 2019 - Budget Due
