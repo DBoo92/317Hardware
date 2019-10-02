@@ -15,7 +15,7 @@ The Raspberry Pi 4, capacitive soil sensor, and diaphragm pump have been ordered
 
 I will be picking up some of the other components (headers, jumper connectors, spray nozzle, fittings, etc) later this week.
 
-I have decided to choose the Raspberry Pi 4 instead of the 3 B+. Over the last week I have done some research/comparison of the two models. The Pi 4 has a noticeable edge over its predecessor in processing power, memory, GPU performance, microSD card read/write speeds, and networking speed. All of this for a modest price increase. While there are still few small bugs with the model 4 (which shouldn't affect this project), it made more sense for future proofing and long term reusability.
+I have decided to choose the Raspberry Pi 4 instead of the 3 B+. Over the last week I have done some research/comparison of the two models. The Pi 4 has a noticeable edge over its predecessor in processing power, memory, GPU performance, microSD card read/write speeds, and networking speed. All of this for a modest price increase. The 4 made more sense for future proofing and long term reusability.
 
 -----
 
