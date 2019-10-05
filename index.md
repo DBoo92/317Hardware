@@ -1,9 +1,21 @@
 Capstone Project - Greenhouse Monitoring System
 -----
 -----
+### October 8, 2019 - Show Acquisitions
+
+![Image of parts1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/amazon_parts.jpg)
+
+![Image of parts2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/sayal_parts.jpg)
+
+![Image of parts3](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/princessauto_parts.jpg)
+
+-----
+
 ### October 4, 2019 - Parts Pickup
 
-Picked up (blank) from Sayal Electronics and (blank) from Princess Auto today.
+Picked up a GPIO header, and 3 pin molex male/female connectors from Sayal Electronics. Picked up a spray nozzle and small fan from Princess Auto today.
+
+My Amazon order also came in the mail today (Pi, sensor, and pump).
 
 -----
 
