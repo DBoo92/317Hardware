@@ -13,7 +13,7 @@ Capstone Project - Greenhouse Monitoring System
 
 ### October 4, 2019 - Parts Pickup
 
-Picked up a GPIO header, and 3 pin molex male/female connectors from Sayal Electronics. Picked up a spray nozzle and small fan from Princess Auto today.
+Picked up a GPIO header, and 3 pin fan connectors (male/female) from Sayal Electronics. Picked up a spray nozzle and small fan from Princess Auto today.
 
 My Amazon order also came in the mail today (Pi, sensor, and pump).
 
