@@ -7,7 +7,7 @@ Capstone Project - Greenhouse Monitoring System
 
 ![Image of parts2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/sayal_parts.jpg)
 
->I realized it will be difficult to use these fan headers on the PCB as they will require through holes. Need to exchange these for breakaway header pins.
+>I realized it will be difficult to use these fan connectors on the PCB as they will require through holes. Need to exchange these for breakaway header pins.
 
 ![Image of parts3](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/princessauto_parts.jpg)
 
