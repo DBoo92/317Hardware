@@ -18,6 +18,10 @@ PCB view:
 
 >I had to create a separate sketch to design the PCB properly (different sketch than breadboard or schematic). Fritzing wouldn't allow me to shorten the GPIO header or splice the ADC header (for wire routing). I ended up creating my own headers to make this work.
 
+I am currently ahead of project schedule.
+The ADC was a small unforseen obstacle, but I was able to resolve it in a timely and cost effective manner.
+I am currently slightly over budget, approx $15 for the ADC and $35 for the Pi 4 (I considered this a necessary upgrade).
+
 -----
 
 ### October 14, 2019 - Breadboarding Update
@@ -40,6 +44,8 @@ Transistor switching the motor:
 
 Testing the water control switch:
 ![Image](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/switchcircuit.jpg)
+
+I decided to add in this water control switch. It will provide users with selection of 3 different watering levels depending on their plant. This was one of the features Valeria said would be nice to have.
 
 -----
 
