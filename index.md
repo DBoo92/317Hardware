@@ -5,6 +5,8 @@ Capstone Project - Greenhouse Monitoring System
 
 This weekend I completed my designs using Fritzing. See below...
 
+An SP3T switch is displayed as a 5 pin header (Fritzing didn't have the proper part/none to import).
+
 Breadboard view:
 ![Image](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/soilmoisturepi_breadboard.png)
 
