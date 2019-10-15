@@ -1,6 +1,35 @@
 Capstone Project - Greenhouse Monitoring System
 -----
 -----
+### October 15, 2019 - Breadboard and PCB Designed
+
+
+
+-----
+
+### October 14, 2019 - Breadboarding Update
+
+Over the last week I have been testing the individual components of my project by building circuits for them.
+
+Testing the sensor:
+![Image](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/sensortest.jpg)
+
+Readings from the sensor (using Arduino for testing):
+![Image](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/sensorreadings.jpg)
+
+>I had to use an Arduino to test the sensor because I didn't realize the Raspberry Pi has no analog input pins. I will have to add an analog to digital converter to my circuit. I have decided to use the the ADS1115 for its relatively low cost and ease of integration with the Pi. This has been ordered from Amazon for $13.79.
+
+Testing the motor:
+![Image](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/motortest.jpg)
+
+Transistor switching the motor:
+![Image](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/transistorcircuit.jpg)
+
+Testing the water control switch:
+![Image](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/switchcircuit.jpg)
+
+-----
+
 ### October 8, 2019 - Show Acquisitions
 
 ![Image of parts1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/amazon_parts.jpg)
