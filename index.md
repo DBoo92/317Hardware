@@ -18,9 +18,9 @@ PCB view:
 
 >I had to create a separate sketch to design the PCB properly (different sketch than breadboard or schematic). Fritzing wouldn't allow me to shorten the GPIO header or splice the ADC header (for wire routing). I ended up creating my own headers to make this work.
 
-I am currently ahead of project schedule.
-The ADC was a small unforseen obstacle, but I was able to resolve it in a timely and cost effective manner.
-I am currently slightly over budget, approx $15 for the ADC and $35 for the Pi 4 (I considered this a necessary upgrade).
+I am currently ahead of project schedule.  
+The ADC was a small unforseen obstacle, but I was able to resolve it in a timely and cost effective manner.  
+I am currently slightly over budget, approx $8 for the ADC and $35 for the Pi 4 (I considered this a necessary upgrade).
 
 -----
 
@@ -34,7 +34,7 @@ Testing the sensor:
 Readings from the sensor (using Arduino for testing):
 ![Image](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/sensorreadings.jpg)
 
->I had to use an Arduino to test the sensor because I didn't realize the Raspberry Pi has no analog input pins. I will have to add an analog to digital converter to my circuit. I have decided to use the the ADS1115 for its relatively low cost and ease of integration with the Pi. This has been ordered from Amazon for $13.79 + tax.
+>I had to use an Arduino to test the sensor because I didn't realize the Raspberry Pi has no analog input pins. I will have to add an analog to digital converter to my circuit. I have decided to use the the ADS1115 for its low cost and ease of integration with the Pi. This has been ordered from Amazon (Universal Solder) for $5 + shipping/tax.
 
 Testing the motor:
 ![Image](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/motortest.jpg)
