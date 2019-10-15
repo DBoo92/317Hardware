@@ -12,7 +12,7 @@ Circuit schematic:
 ![Image](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/soilmoisturepi_circuitry.png)
 
 PCB view:
-![Image](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/soilmoistureheader_pcb.png)
+![Image](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/SoilMoistureHeader_pcb.png)
 
 >I had to create a separate sketch to design the PCB properly (different sketch than breadboard or schematic). Fritzing wouldn't allow me to shorten the GPIO header or splice the ADC header (for wire routing). I ended up creating my own headers to make this work.
 
