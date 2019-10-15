@@ -3,13 +3,24 @@ Capstone Project - Greenhouse Monitoring System
 -----
 ### October 15, 2019 - Breadboard and PCB Designed
 
+This weekend I completed my designs using Fritzing. See below...
 
+Breadboard view:
+![Image](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/soilmoisturepi_breadboard.png)
+
+Circuit schematic:
+![Image](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/soilmoisturepi_circuitry.png)
+
+PCB view:
+![Image](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/soilmoistureheader_pcb.png)
+
+>I had to create a separate sketch to design the PCB properly (different sketch than breadboard or schematic). Fritzing wouldn't allow me to shorten the GPIO header or splice the ADC header (for wire routing). I ended up creating my own headers to make this work.
 
 -----
 
 ### October 14, 2019 - Breadboarding Update
 
-Over the last week I have been testing the individual components of my project by building circuits for them.
+Over the last few days I have been testing the individual components of my project by building circuits for them.
 
 Testing the sensor:
 ![Image](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/sensortest.jpg)
@@ -17,7 +28,7 @@ Testing the sensor:
 Readings from the sensor (using Arduino for testing):
 ![Image](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/sensorreadings.jpg)
 
->I had to use an Arduino to test the sensor because I didn't realize the Raspberry Pi has no analog input pins. I will have to add an analog to digital converter to my circuit. I have decided to use the the ADS1115 for its relatively low cost and ease of integration with the Pi. This has been ordered from Amazon for $13.79.
+>I had to use an Arduino to test the sensor because I didn't realize the Raspberry Pi has no analog input pins. I will have to add an analog to digital converter to my circuit. I have decided to use the the ADS1115 for its relatively low cost and ease of integration with the Pi. This has been ordered from Amazon for $13.79 + tax.
 
 Testing the motor:
 ![Image](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/motortest.jpg)
