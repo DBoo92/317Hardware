@@ -16,7 +16,7 @@ Circuit schematic:
 ![Image](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/SoilMoistureSchematic.png)
 
 PCB view:
-![Image](hhttps://raw.githubusercontent.com/DBoo92/317Hardware/master/images/SoilMoisturePCB.png)
+![Image](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/SoilMoisturePCB.png)
 
 >I had to create a separate sketch to design the PCB properly (different sketch than breadboard or schematic). Fritzing wouldn't allow me to resize the GPIO header or splice the ADC header (for wire routing). I ended up creating my own headers to make this work.
 
