@@ -7,20 +7,23 @@ This weekend I completed my designs using Fritzing. See below...
 
 An SP3T switch is displayed as a 5 pin header (Fritzing didn't have the proper part/none to import).
 
+Kelly recommended using an external power source for the motor (to protect the Pi). I incorporated this by adding a barrel jack for the motor which will connect to a 12v supply.
+
 Breadboard view:
-![Image](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/soilmoisturepi_breadboard.png)
+![Image](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/SoilMoistureBreadboard.png)
 
 Circuit schematic:
-![Image](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/soilmoisturepi_circuitry.png)
+![Image](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/SoilMoistureSchematic.png)
 
 PCB view:
-![Image](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/SoilMoistureHeader_pcb.png)
+![Image](hhttps://raw.githubusercontent.com/DBoo92/317Hardware/master/images/SoilMoisturePCB.png)
 
->I had to create a separate sketch to design the PCB properly (different sketch than breadboard or schematic). Fritzing wouldn't allow me to shorten the GPIO header or splice the ADC header (for wire routing). I ended up creating my own headers to make this work.
+>I had to create a separate sketch to design the PCB properly (different sketch than breadboard or schematic). Fritzing wouldn't allow me to resize the GPIO header or splice the ADC header (for wire routing). I ended up creating my own headers to make this work.
 
-I am currently ahead of project schedule.  
-The ADC was a small unforseen obstacle, but I was able to resolve it in a timely and cost effective manner.  
-I am currently slightly over budget, approx $8 for the ADC and $35 for the Pi 4 (I considered this a necessary upgrade).
+I am currently ahead of my project schedule.  
+My breadboarding is complete and my PCB is designed.  
+Adding the ADC was a small unforseen obstacle, but I was able to resolve it in a timely and cost effective manner.  
+I am currently slightly over budget, approx $8 for the ADC and $35 for the Pi 4 (I considered this a necessary upgrade).  
 
 -----
 
