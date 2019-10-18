@@ -1,6 +1,17 @@
 Capstone Project - Greenhouse Monitoring System
 -----
 -----
+### October 17, 2019 - PCB Update
+
+I moved a few components around and managed to reduce the board width to 33mm (original was 39mm). I also turned the ADS1115 around 180 degrees so I could add mounting holes for it.
+
+I've sent this design in to the prototype lab to be made.
+
+Updated PCB:
+![NewPCBImage](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/SoilMoisturePCBupdate.png)
+
+-----
+
 ### October 15, 2019 - Breadboard and PCB Designed
 
 This weekend I completed my designs using Fritzing. See below...
@@ -10,13 +21,13 @@ An SP3T switch is displayed as a 5 pin header (Fritzing didn't have the proper p
 Kelly recommended using an external power source for the motor (to protect the Pi). I incorporated this by adding a barrel jack for the motor which will connect to a 12v supply.
 
 Breadboard view:
-![Image](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/SoilMoistureBreadboard.png)
+![BreadboardImage](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/SoilMoistureBreadboard.png)
 
 Circuit schematic:
-![Image](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/SoilMoistureSchematic.png)
+![SchematicImage](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/SoilMoistureSchematic.png)
 
 PCB view:
-![Image](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/SoilMoisturePCB.png)
+![PCBImage](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/SoilMoisturePCB.png)
 
 >I had to create a separate sketch to design the PCB properly (different sketch than breadboard or schematic). Fritzing wouldn't allow me to resize the GPIO header or splice the ADC header (for wire routing). I ended up creating my own headers to make this work.
 
@@ -32,21 +43,21 @@ I am currently slightly over budget, approx $8 for the ADC and $35 for the Pi 4 
 Over the last few days I have been testing the individual components of my project by building circuits for them.
 
 Testing the sensor:
-![Image](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/sensortest.jpg)
+![SensorTestImage](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/sensortest.jpg)
 
 Readings from the sensor (using Arduino for testing):
-![Image](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/sensorreadings.jpg)
+![SensorReadingsImage](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/sensorreadings.jpg)
 
 >I had to use an Arduino to test the sensor because I didn't realize the Raspberry Pi has no analog input pins. I will have to add an analog to digital converter to my circuit. I have decided to use the the ADS1115 for its low cost and ease of integration with the Pi. This has been ordered from Amazon (Universal Solder) for $5 + shipping/tax.
 
 Testing the motor:
-![Image](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/motortest.jpg)
+![MotorTestImage](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/motortest.jpg)
 
 Transistor switching the motor:
-![Image](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/transistorcircuit.jpg)
+![MotorCircuitImage](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/transistorcircuit.jpg)
 
 Testing the water control switch:
-![Image](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/switchcircuit.jpg)
+![WaterSwitchImage](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/switchcircuit.jpg)
 
 I decided to add in this water control switch. It will provide users with selection of 3 different watering levels depending on their plant. This was one of the features Valeria said would be nice to have.
 
