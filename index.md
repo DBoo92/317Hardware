@@ -7,7 +7,7 @@ As you can see from my October 14th blog entry, breadboarding has been completed
 
 I am currently ahead of my project schedule.  
 My breadboarding is complete and I have started soldering. My PCB should be fully soldered in the next few days.  
-I am still slightly over budget due to the ADC and the Pi 4 upgrade. No extra costs/obstacles since the ADC.
+I am still slightly over budget due to adding the ADC and the Pi 4 upgrade. No extra costs/obstacles since the ADC.
 
 -----
 
