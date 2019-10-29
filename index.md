@@ -8,6 +8,8 @@ As you can see from my October 14th blog entry, I previously breadboarded all th
 Complete Breadboard:  
 ![Breadboard](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/BreadboardingComplete.jpg)
 
+I used libraries/sample code from Adafruit to get the analog readings from the ADS1115 and display them, which can be found [here](https://github.com/DBoo92/317Hardware/blob/master/software/simpletest.py).
+
 Initial Readings (soil sensor in far left column):  
 ![Readins1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/Readings.jpg)
 
