@@ -1,6 +1,42 @@
 Capstone Project - Greenhouse Monitoring System
 -----
 -----
+### October 29, 2019 - Breadboarded Milestone
+
+As you can see from my October 14th blog entry, breadboarding has been completed on all the individual components. I will reassemble the setup (including the ADC and Pi this time) to demonstarte to Kristian during Tuesday's lab.
+
+I am currently ahead of my project schedule.
+My breadboarding is complete and I have started soldering. My PCB should be fully soldered in the next few days.
+I am still slightly over budget due to the ADC and the Pi 4 upgrade. No extra costs/obstacles since the ADC.
+
+-----
+
+### October 27, 2019 - Begin Soldering
+
+I picked up my PCB at the beginning of reading week (forgot to take pictures). Here is my current progress on soldering.
+
+ADS1115:  
+![ADC](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/adcsolder.jpg)
+
+Vias, Switch, and DC Jack:  
+![PCBtop](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pcbsolder1.jpg)
+
+![PCBbottom](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pcbsolder2.jpg)
+
+-----
+
+### October 22, 2019 - OS Loaded
+
+During reading week I loaded the Raspbian Buster OS and completed the system configuration.
+
+Powering up:  
+![PiImage](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pipower.jpg)
+
+OS loaded:  
+![PiOS](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pios.jpg)
+
+-----
+
 ### October 17, 2019 - PCB Update
 
 I moved a few components around and managed to reduce the board width to 33mm (original was 39mm). I also turned the ADS1115 around 180 degrees so I could add mounting holes for it.
