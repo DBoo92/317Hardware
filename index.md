@@ -3,11 +3,20 @@ Capstone Project - Greenhouse Monitoring System
 -----
 ### October 29, 2019 - Breadboarded Milestone
 
-As you can see from my October 14th blog entry, breadboarding has been completed on all the individual components. I will reassemble the setup (including the ADC and Pi this time) to demonstarte to Kristian during Tuesday's lab.
+As you can see from my October 14th blog entry, I previously breadboarded all the individual components (unit testing). I will reassemble the full setup (including the ADC and Pi this time) to demonstarte during Tuesday's lab.
+
+Complete Breadboard:  
+![Breadboard](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/BreadboardingComplete.jpg)
+
+Initial Readings (soil sensor in far left column):  
+![Readins1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/Readings.jpg)
+
+Change in readings:  
+![Readings2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/ReadingsChanged.jpg)
 
 I am currently ahead of my project schedule.  
 My breadboarding is complete and I have started soldering. My PCB should be fully soldered in the next few days.  
-I am still slightly over budget due to adding the ADC and the Pi 4 upgrade. No extra costs/obstacles since the ADC.
+I am still slightly over budget due to adding the ADC and the Pi 4 upgrade. No extra costs/obstacles since the ADC though.
 
 -----
 
