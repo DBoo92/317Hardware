@@ -79,7 +79,7 @@ PCB view:
 >I had to create a separate sketch to design the PCB properly (different sketch than breadboard or schematic). Fritzing wouldn't allow me to resize the GPIO header or splice the ADC header (for wire routing). I ended up creating my own headers to make this work.
 
 I am currently ahead of my project schedule.  
-My breadboarding is complete and my PCB is designed.  
+My breadboarding is almost complete and my PCB is designed.  
 Adding the ADC was a small unforseen obstacle, but I was able to resolve it in a timely and cost effective manner.  
 I am currently slightly over budget, approx $8 for the ADC and $35 for the Pi 4 (I considered this a necessary upgrade).  
 
