@@ -5,8 +5,8 @@ Capstone Project - Greenhouse Monitoring System
 
 As you can see from my October 14th blog entry, breadboarding has been completed on all the individual components. I will reassemble the setup (including the ADC and Pi this time) to demonstarte to Kristian during Tuesday's lab.
 
-I am currently ahead of my project schedule.
-My breadboarding is complete and I have started soldering. My PCB should be fully soldered in the next few days.
+I am currently ahead of my project schedule.  
+My breadboarding is complete and I have started soldering. My PCB should be fully soldered in the next few days.  
 I am still slightly over budget due to the ADC and the Pi 4 upgrade. No extra costs/obstacles since the ADC.
 
 -----
