@@ -1,6 +1,36 @@
 Capstone Project - Greenhouse Monitoring System
 -----
 -----
+### November 5, 2019 - PCB Soldered
+
+Over the weekend I finished soldering my PCB, here is the result:
+
+Top:   
+![pcbtop](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pcb_top.jpg)
+
+Bottom:  
+![pcbbottom](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pcb_bottom.jpg)
+
+I ran continuity tests on the traces, vias, and between adjacent header pins. Everything passed.
+  
+![pcbcont](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pcb_cont.jpg)
+
+I tested the fit of the completed PCB onto the Pi using some small risers/washers I had on hand.
+
+![pcbsetup](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pcb_risers.jpg)
+
+I am currently on time with my project schedule.  
+My PCB is soldered.
+The budget is in the same state as previous weeks (approx. $45 - $50 over).
+
+ Next steps:  
+ I will be testing the PCB with the Pi/sensor during this week to prepare for the next milestone.  
+ Begin the progress report due next week.  
+ We are attending the 3D printing seminar on Tuesday as a class.   
+ I will begin designing the enclosure following the seminar.
+
+-----
+
 ### October 29, 2019 - Breadboarded Milestone
 
 As you can see from my October 14th blog entry, I previously breadboarded all the individual components (unit testing). I will reassemble the full setup (including the ADC and Pi this time) to demonstarte during Tuesday's lab.
