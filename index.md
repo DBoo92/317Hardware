@@ -20,8 +20,9 @@ I tested the fit of the completed PCB onto the Pi using some small risers/washer
 ![pcbsetup](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pcb_risers.jpg)
 
 I am currently on time with my project schedule.  
-My PCB is soldered.  
-The budget is in the same state as previous weeks (approx. $45 - $50 over).
+My PCB is fully soldered.  
+My budget is in the same state as previous weeks (approx. $45 over due to adding ADC and Pi 4 upgrade).  
+The system is coming together as planned in my project proposal (with the addition of the watering control switch).
 
  Next steps:  
  I will be testing the PCB with the Pi/sensor during this week to prepare for the next milestone.  
