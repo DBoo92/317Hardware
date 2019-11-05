@@ -20,7 +20,7 @@ I tested the fit of the completed PCB onto the Pi using some small risers/washer
 ![pcbsetup](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pcb_risers.jpg)
 
 I am currently on time with my project schedule.  
-My PCB is soldered.
+My PCB is soldered.  
 The budget is in the same state as previous weeks (approx. $45 - $50 over).
 
  Next steps:  
