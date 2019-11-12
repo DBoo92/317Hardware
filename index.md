@@ -1,6 +1,36 @@
 Capstone Project - Greenhouse Monitoring System
 -----
 -----
+### November 11, 2019 - Enclosure Design
+
+I designed the middle section of my case which will enclosed by acrylic plates on the top and bottom. This piece has been sent out for 3D printing.
+
+View 1:   
+![scadfront](https://raw.githubusercontent.com/DBoo92/317Hardware/master/mechanical/ProjectBoxMiddleRPI(1).png)
+
+View 2:   
+![scadback](https://raw.githubusercontent.com/DBoo92/317Hardware/master/mechanical/ProjectBoxMiddleRPI(2).png)
+
+-----
+
+### November 8, 2019 - Progress Update
+
+Over the weekend I powered up my PCB and got readings from it. I also did some finish wiring/soldering on some components.
+
+PCB power up readings (first 2 columns):   
+![pcbread](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pcbreadings.jpg)
+
+Extend sensor wires:  
+![sensextend](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/sensorextend.jpg)
+
+Crimp/solder pins for molex connector:    
+![senspins](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/sensorpins.jpg)
+
+Soldered a pigtail onto the motor:
+![motorwire](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/motorpigtail.jpg)
+
+-----
+
 ### November 5, 2019 - PCB Soldered
 
 Over the weekend I finished soldering my PCB, here is the result:
