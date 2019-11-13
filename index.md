@@ -1,6 +1,22 @@
 Capstone Project - Greenhouse Monitoring System
 -----
 -----
+### November 12, 2019 - PCB Power Up
+
+Today during the lab I installed my completed PCB onto the Pi and demonstrated reading sensor values to the professor.
+
+Later that day I designed the top and bottom covers for my case. These designs were created in Corel Draw and will be laser cut out of acrylic.
+
+Top:  
+Includes intake slots for the fan.  
+![coreltop](https://github.com/DBoo92/317Hardware/blob/master/mechanical/CaseBottom.pdf)
+
+Bottom:   
+Motor will be mounted to this beside the Pi.
+![corelbottom](https://github.com/DBoo92/317Hardware/blob/master/mechanical/CaseTop.pdf)
+
+-----
+
 ### November 11, 2019 - Enclosure Design
 
 I designed the middle section of my case which will enclosed by acrylic plates on the top and bottom. This piece has been sent out for 3D printing.
