@@ -7,9 +7,9 @@ Today during the lab I installed my completed PCB onto the Pi and demonstrated r
 
 Later that day I designed the top and bottom covers for my case. These designs were created in Corel Draw and will be laser cut out of acrylic.
 
-![Top cover:](https://github.com/DBoo92/317Hardware/blob/master/mechanical/CaseTop.pdf) Includes intake slots for the fan.
+[Top cover:](https://github.com/DBoo92/317Hardware/blob/master/mechanical/CaseTop.pdf) Includes intake slots for the fan.
 
-![Bottom cover:](https://github.com/DBoo92/317Hardware/blob/master/mechanical/CaseBottom.pdf) Motor will be mounted to this as well (beside the Pi).
+[Bottom cover:](https://github.com/DBoo92/317Hardware/blob/master/mechanical/CaseBottom.pdf) Motor will be mounted to this as well (beside the Pi).
 
 -----
 
