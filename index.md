@@ -15,14 +15,14 @@ Later that day I designed the top and bottom covers for my case. These designs w
 
 ### November 11, 2019 - Enclosure Design
 
-I designed the middle section of my case which will enclosed by acrylic plates on the top and bottom. This piece has been sent out for 3D printing.
+I designed the middle section of my case which will be enclosed by acrylic plates on the top and bottom. This piece has been sent out for 3D printing.
 
 View 1:  
-Front cutout - Pi USB and ethernet, Side cutout  - Pi USB-C power, HDMI, and audio  
+Front cutout - USB and ethernet ports, Side cutout  - USB-C power, HDMI, and audio ports    
 ![scadfront](https://raw.githubusercontent.com/DBoo92/317Hardware/master/mechanical/ProjectBoxMiddleRPI(1).png)
 
 View 2:   
-Bottom cutout - Pi SD card access, Top cutout - access to switch and DC jack on PCB
+Bottom cutout - Pi SD card access, Top cutout - access to switch and DC jack on PCB  
 ![scadback](https://raw.githubusercontent.com/DBoo92/317Hardware/master/mechanical/ProjectBoxMiddleRPI(2).png)
 
 -----
