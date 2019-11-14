@@ -3,7 +3,8 @@ Capstone Project - Greenhouse Monitoring System
 -----
 ### November 12, 2019 - PCB Power Up
 
-Today during the lab I installed my completed PCB onto the Pi and demonstrated reading sensor values to the professor.
+Today during the lab I installed my completed PCB onto the Pi and demonstrated reading sensor values to the professor.  
+I also submitted my [week 10 progress report](https://github.com/DBoo92/317Hardware/blob/master/documentation/Week%2010%20Progress%20Report.docx).
 
 Later that day I designed the top and bottom covers for my case. These designs were created in Corel Draw and will be laser cut out of acrylic.
 
