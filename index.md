@@ -8,7 +8,7 @@ I also submitted my [week 10 progress report](https://github.com/DBoo92/317Hardw
 
 Later that day I designed the top and bottom covers for my case. These designs were created in Corel Draw and will be laser cut out of acrylic.
 
-[Top cover:](https://github.com/DBoo92/317Hardware/blob/master/mechanical/CaseTop.pdf) Includes intake slots for the fan.
+[Top cover:](https://github.com/DBoo92/317Hardware/blob/master/mechanical/CaseTop.pdf) Includes intake slots for the fan and a cutout for the molex connectors.
 
 [Bottom cover:](https://github.com/DBoo92/317Hardware/blob/master/mechanical/CaseBottom.pdf) Motor will be mounted to this as well (beside the Pi).
 
