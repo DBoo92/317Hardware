@@ -112,7 +112,7 @@ The system is coming together as planned in my project proposal (with the additi
 As you can see from my October 14th blog entry, I previously breadboarded all the individual components (unit testing). I will reassemble the full setup (including the ADC and Pi this time) to demonstarte during Tuesday's lab.
 
 Complete Breadboard:  
-![Breadboard](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/BreadboardingComplete.jpg)
+![Breadboard](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/breadboarding/BreadboardingComplete.jpg)
 
 I used libraries/sample code from Adafruit to get the analog readings from the ADS1115 and display them, which can be found [here](https://github.com/DBoo92/317Hardware/blob/master/software/simpletest.py).
 
@@ -196,21 +196,21 @@ I am currently slightly over budget, approx $8 for the ADC and $35 for the Pi 4 
 Over the last few days I have been testing the individual components of my project by building circuits for them.
 
 Testing the sensor:
-![SensorTestImage](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/sensortest.jpg)
+![SensorTestImage](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/breadboarding/sensortest.jpg)
 
 Readings from the sensor (using Arduino for testing):
-![SensorReadingsImage](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/sensorreadings.jpg)
+![SensorReadingsImage](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/breadboarding/sensorreadings.jpg)
 
 >I had to use an Arduino to test the sensor because I didn't realize the Raspberry Pi has no analog input pins. I will have to add an analog to digital converter to my circuit. I have decided to use the the ADS1115 for its low cost and ease of integration with the Pi. This has been ordered from Amazon (Universal Solder) for $5 + shipping/tax.
 
 Testing the motor:
-![MotorTestImage](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/motortest.jpg)
+![MotorTestImage](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/breadboarding/motortest.jpg)
 
 Transistor switching the motor:
-![MotorCircuitImage](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/transistorcircuit.jpg)
+![MotorCircuitImage](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/breadboarding/transistorcircuit.jpg)
 
 Testing the water control switch:
-![WaterSwitchImage](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/switchcircuit.jpg)
+![WaterSwitchImage](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/breadboarding/switchcircuit.jpg)
 
 I decided to add in this water control switch. It will provide users with selection of 3 different watering levels depending on their plant. This was one of the features Valeria said would be nice to have.
 
