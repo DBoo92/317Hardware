@@ -161,7 +161,7 @@ I moved a few components around and managed to reduce the board width to 33mm (o
 I've sent this design in to the prototype lab to be made.
 
 Updated PCB:  
-![NewPCBImage](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/SoilMoisturePCBupdate.png)
+![NewPCBImage](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/fritzing/SoilMoisturePCBupdate.png)
 
 -----
 
@@ -174,13 +174,13 @@ An SP3T switch is displayed as a 5 pin header (Fritzing didn't have the proper p
 Kelly recommended using an external power source for the motor (to protect the Pi). I incorporated this by adding a barrel jack for the motor which will connect to a 12v supply.
 
 Breadboard view:
-![BreadboardImage](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/SoilMoistureBreadboard.png)
+![BreadboardImage](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/fritzing/SoilMoistureBreadboard.png)
 
 Circuit schematic:
-![SchematicImage](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/SoilMoistureSchematic.png)
+![SchematicImage](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/fritzing/SoilMoistureSchematic.png)
 
 PCB view:  
-![PCBImage](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/SoilMoisturePCB.png)
+![PCBImage](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/fritzing/SoilMoisturePCB.png)
 
 >I had to create a separate sketch to design the PCB properly (different sketch than breadboard or schematic). Fritzing wouldn't allow me to resize the GPIO header or splice the ADC header (for wire routing). I ended up creating my own headers to make this work.
 
