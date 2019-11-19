@@ -4,13 +4,13 @@ Capstone Project - Greenhouse Monitoring System
 ### November 19, 2019 - Enclosure Due
 
 Completed enclosure assembled:  
-![case1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/caseabove.jpg)
+![case1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/enclosure/caseabove.jpg)
 
-![case2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/casefront.jpg)
+![case2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/enclosure/casefront.jpg)
 
-![case3](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/caseleft.jpg)
+![case3](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/enclosure/caseleft.jpg)
 
-![case4](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/caseright.jpg)
+![case4](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/enclosure/caseright.jpg)
 
 -----
 
