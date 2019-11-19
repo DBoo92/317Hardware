@@ -218,13 +218,13 @@ I decided to add in this water control switch. It will provide users with select
 
 ### October 8, 2019 - Show Acquisitions
 
-![Image of parts1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/amazon_parts.jpg)
+![Image of parts1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/order%20%26%20parts/amazon_parts.jpg)
 
-![Image of parts2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/sayal_parts.jpg)
+![Image of parts2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/order%20%26%20parts/sayal_parts.jpg)
 
 >I realized it will be difficult to use these fan connectors on the PCB as they will require through hole plating. Need to exchange these for breakaway header pins.
 
-![Image of parts3](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/princessauto_parts.jpg)
+![Image of parts3](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/order%20%26%20parts/princessauto_parts.jpg)
 
 -----
 
@@ -240,7 +240,7 @@ My Amazon order also came in the mail today (Pi, sensor, and pump).
 
 The Raspberry Pi 4, capacitive soil sensor, and diaphragm pump have been ordered from Amazon:
 
-![Image of order](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/partsorder.png)
+![Image of order](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/order%20%26%20parts/partsorder.png)
 
 I will be picking up some of the other components (headers, jumper connectors, spray nozzle, fittings, etc) later this week.
 
