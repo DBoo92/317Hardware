@@ -50,11 +50,11 @@ I designed the middle section of my case which will be enclosed by acrylic plate
 
 View 1:  
 Front cutout - USB and ethernet ports, Side cutout  - USB-C power, HDMI, and audio ports    
-![scadfront](https://raw.githubusercontent.com/DBoo92/317Hardware/master/mechanical/ProjectBoxMiddleRPI(1).png)
+![scadfront](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/enclosure/ProjectBoxMiddleRPI(1).png)
 
 View 2:   
 Bottom cutout - Pi SD card access, Top cutout - access to switch and DC jack on PCB  
-![scadback](https://raw.githubusercontent.com/DBoo92/317Hardware/master/mechanical/ProjectBoxMiddleRPI(2).png)
+![scadback](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/enclosure/ProjectBoxMiddleRPI(2).png)
 
 -----
 
