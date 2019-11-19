@@ -23,6 +23,9 @@ The hardware I picked up:
 (4) M3 x 0.5 x 16mm socket head screw  
 (4) M3 x 0.5 nuts  
 (4) M2.5 x 0.45 x 10mm button head screw  
+Already owned:  
+(4) computer case fan screws  
+(4) M3 washers  
 
 Pics of individual parts to be posted...
 
