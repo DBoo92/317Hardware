@@ -1,6 +1,33 @@
 Capstone Project - Greenhouse Monitoring System
 -----
 -----
+### November 19, 2019 - Enclosure Due
+
+Completed enclosure assembled:  
+![case1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/caseabove.jpg)
+
+![case2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/casefront.jpg)
+
+![case3](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/caseleft.jpg)
+
+![case4](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/caseright.jpg)
+
+-----
+
+### November 14, 2019 - Case Parts
+
+I received all my case parts today. The 3D printed middle section, acrylic top/bottom, and hardware for assembly. I will be stopping by my old workplace to tap the holes on the bottom cover.
+
+The hardware I picked up:
+(4) M5 x 0.8 x 40mm socket head screw
+(4) M3 x 0.5 x 16mm socket head screw
+(4) M3 x 0.5 nuts
+(4) M2.5 x 0.45 x 10mm button head screw
+
+Pics of individual parts to be posted...
+
+-----
+
 ### November 12, 2019 - PCB Power Up
 
 Today during the lab I installed my completed PCB onto the Pi and demonstrated reading sensor values to the professor.  
