@@ -66,13 +66,13 @@ PCB power up readings (first 2 columns):
 ![pcbread](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pi%20%26%20readings/pcbreadings.jpg)
 
 Extend sensor wires:  
-![sensextend](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/sensorextend.jpg)
+![sensextend](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pcb%20%26%20assembly/sensorextend.jpg)
 
 Crimp/solder pins for molex connector:    
-![senspins](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/sensorpins.jpg)
+![senspins](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pcb%20%26%20assembly/sensorpins.jpg)
 
 Soldered a pigtail onto the motor:
-![motorwire](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/motorpigtail.jpg)
+![motorwire](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pcb%20%26%20assembly/motorpigtail.jpg)
 
 -----
 
@@ -81,18 +81,18 @@ Soldered a pigtail onto the motor:
 Over the weekend I finished soldering my PCB, here is the result:
 
 Top:   
-![pcbtop](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pcb_top.jpg)
+![pcbtop](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pcb%20%26%20assembly/pcb_top.jpg)
 
 Bottom:  
-![pcbbottom](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pcb_bottom.jpg)
+![pcbbottom](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pcb%20%26%20assembly/pcb_bottom.jpg)
 
 I ran continuity tests on the traces, vias, and between adjacent header pins. Everything passed.
   
-![pcbcont](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pcb_cont.jpg)
+![pcbcont](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pcb%20%26%20assembly/pcb_cont.jpg)
 
 I tested the fit of the completed PCB onto the Pi using some small risers/washers I had on hand.
 
-![pcbsetup](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pcb_risers.jpg)
+![pcbsetup](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pcb%20%26%20assembly/pcb_risers.jpg)
 
 I am currently on time with my project schedule.  
 My PCB is fully soldered.  
@@ -133,12 +133,12 @@ I am still slightly over budget due to adding the ADC and the Pi 4 upgrade. No e
 I picked up my PCB at the beginning of reading week (forgot to take pictures). Here is my current progress on soldering.
 
 ADS1115:  
-![ADC](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/adcsolder.jpg)
+![ADC](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pcb%20%26%20assembly/adcsolder.jpg)
 
 Vias, Switch, and DC Jack:  
-![PCBtop](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pcbsolder1.jpg)
+![PCBtop](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pcb%20%26%20assembly/pcbsolder1.jpg)
 
-![PCBbottom](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pcbsolder2.jpg)
+![PCBbottom](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pcb%20%26%20assembly/pcbsolder2.jpg)
 
 -----
 
