@@ -63,7 +63,7 @@ Bottom cutout - Pi SD card access, Top cutout - access to switch and DC jack on 
 Over the weekend I powered up my PCB and got readings from it. I also did some finish wiring/soldering on some components.
 
 PCB power up readings (first 2 columns):   
-![pcbread](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pcbreadings.jpg)
+![pcbread](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pi%20%26%20readings/pcbreadings.jpg)
 
 Extend sensor wires:  
 ![sensextend](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/sensorextend.jpg)
@@ -117,10 +117,10 @@ Complete Breadboard:
 I used libraries/sample code from Adafruit to get the analog readings from the ADS1115 and display them, which can be found [here](https://github.com/DBoo92/317Hardware/blob/master/software/simpletest.py).
 
 Initial Readings (soil sensor in far left column):  
-![Readins1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/Readings.jpg)
+![Readins1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pi%20%26%20readings/Readings.jpg)
 
 Change in readings:  
-![Readings2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/ReadingsChanged.jpg)
+![Readings2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pi%20%26%20readings/ReadingsChanged.jpg)
 
 I am currently ahead of my project schedule.  
 My breadboarding is complete and I have started soldering. My PCB should be fully soldered in the next few days.  
@@ -147,10 +147,10 @@ Vias, Switch, and DC Jack:
 During reading week I loaded the Raspbian Buster OS and completed the system configuration.
 
 Powering up:  
-![PiImage](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pipower.jpg)
+![PiImage](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pi%20%26%20readings/pipower.jpg)
 
 OS loaded:  
-![PiOS](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pios.jpg)
+![PiOS](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pi%20%26%20readings/pios.jpg)
 
 -----
 
