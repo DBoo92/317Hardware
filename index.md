@@ -12,6 +12,8 @@ Completed enclosure assembled:
 
 ![case4](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/enclosure/caseright.jpg)
 
+All measurements/tolerances for this case (3D print parts or laser cut parts) were obtained using vernier calipers or taken from [this](https://www.raspberrypi.org/documentation/hardware/raspberrypi/mechanical/rpi_MECH_4b_4p0.pdf) Pi 4 blueprint. This case was custom designed by myself.
+
 -----
 
 ### November 14, 2019 - Case Parts
@@ -38,7 +40,7 @@ Pics of individual parts to be posted...
 Today during the lab I installed my completed PCB onto the Pi and demonstrated reading sensor values to the professor.  
 I also submitted my [week 10 progress report](https://github.com/DBoo92/317Hardware/blob/master/documentation/Week%2010%20Progress%20Report.docx).
 
-Later that day I designed the top and bottom covers for my case. These designs were created in Corel Draw and will be laser cut out of acrylic.
+Later that day I designed the top and bottom covers for my case. These designs were created in CorelDraw and will be laser cut out of acrylic.
 
 [Top cover:](https://github.com/DBoo92/317Hardware/blob/master/mechanical/CaseTop.pdf) Includes intake slots for the fan and a cutout for the molex connectors.
 
@@ -48,7 +50,7 @@ Later that day I designed the top and bottom covers for my case. These designs w
 
 ### November 11, 2019 - Enclosure Design
 
-I designed the middle section of my case which will be enclosed by acrylic plates on the top and bottom. This piece has been sent out for 3D printing.
+I designed the middle section of my case which will be enclosed by acrylic plates on the top and bottom. I created this design from scratch using OpenSCAD. This piece has been sent out for 3D printing.
 
 View 1:  
 Front cutout - USB and ethernet ports, Side cutout  - USB-C power, HDMI, and audio ports    
