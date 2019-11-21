@@ -16,16 +16,18 @@ Completed enclosure assembled:
 
 ### November 14, 2019 - Case Parts
 
-I received all my case parts today. The 3D printed middle section, acrylic top/bottom, and hardware for assembly. I will be stopping by my old workplace to tap the holes on the bottom cover.
+I received all my case parts today. The 3D printed middle section, acrylic top/bottom, acrylic washers, and hardware for assembly. I will be stopping by my old workplace to tap the holes on the bottom cover.
 
-The hardware I picked up:  
+The hardware I picked up (no cost):  
 (4) M5 x 0.8 x 40mm socket head screw  
 (4) M3 x 0.5 x 16mm socket head screw  
 (4) M3 x 0.5 nuts  
 (4) M2.5 x 0.45 x 10mm button head screw  
+
 Already owned:  
 (4) computer case fan screws  
 (4) M3 washers  
+(4) 3mm thick acrylic washers for under the Pi (so it doesn't rest on its pins)
 
 Pics of individual parts to be posted...
 
