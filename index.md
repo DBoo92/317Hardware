@@ -12,7 +12,7 @@ Completed enclosure assembled:
 
 ![case4](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/enclosure/caseright.jpg)
 
-All measurements/tolerances for this case (3D print parts or laser cut parts) were obtained using vernier calipers or taken from [this](https://www.raspberrypi.org/documentation/hardware/raspberrypi/mechanical/rpi_MECH_4b_4p0.pdf) Pi 4 blueprint. This case was custom designed by myself.
+All measurements/tolerances for this case (3D print parts or laser cut parts) were obtained using a vernier caliper or taken from [this](https://www.raspberrypi.org/documentation/hardware/raspberrypi/mechanical/rpi_MECH_4b_4p0.pdf) Pi 4 blueprint. This case was custom designed by myself.
 
 -----
 
