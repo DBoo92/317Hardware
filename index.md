@@ -3,7 +3,7 @@ Capstone Project - Greenhouse Monitoring System
 -----
 ### November 24, 2019 - Update
 
-<video src="https://github.com/DBoo92/317Hardware/blob/master/videos/soilreadings.mp4" width="320" height="200" controls preload></video>
+![Sample Video](https://github.com/DBoo92/317Hardware/blob/master/videos/soilreadings.mp4")
 
 -----
 
