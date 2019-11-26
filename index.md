@@ -3,6 +3,45 @@ Capstone Project - Greenhouse Monitoring System
 -----
 ### November 24, 2019 - Update
 
+I updated my sample Python program to include functionality for the watering level switch and irrigation/motor system. You can find the updated program under software/readingsupdated.py
+
+Here is the code fragment:
+
+```python
+ # Print the ADC values.
+    print('| {0:>6} | {1:>6} | {2:>6} | {3:>6} |'.format(*values))
+
+    # Declare variable for watering level switch
+    water_lvl = 0
+
+    # Declare variable for moisture reference value
+    ref = 13000
+
+    # Set watering level
+    if (values[1] < 1000):
+	water_lvl = 0.5
+    elif (values[1] > 12000 and values[1] < 14000):
+	water_lvl = 1.5
+    elif (values[1] > 24000):
+	water_lvl = 3
+    else:
+	water_lvl = 0
+
+    # Turn on motor/watering system if soil moisture is too low
+    if (values[0] > 13000):
+        GPIO.output(22,GPIO.HIGH)
+        # Turn motor on for water_lvl seconds
+	   time.sleep(water_lvl)
+        GPIO.output(22,GPIO.LOW)
+        # sleep to allow water absorbtion before recheck
+	   time.sleep(10)
+
+    # Pause for 2 seconds.
+    time.sleep(2)
+```
+
+Here is a video of the fully functioning system (watering level is set to "medium" or 1.5 seconds):
+
 [![ReadingsVideo](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pi%20%26%20readings/vidscreenshot.png)](https://youtu.be/7LPlyvlskEI "CENG 317 soil readings")
 
 -----
