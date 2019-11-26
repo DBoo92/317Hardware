@@ -3,8 +3,7 @@ Capstone Project - Greenhouse Monitoring System
 -----
 ### November 24, 2019 - Update
 
-<a href="https://youtu.be/7LPlyvlskEI" target="_blank"><img src="https://i9.ytimg.com/vi/7LPlyvlskEI/mq1.jpg?sqp=CJfW8e4F&rs=AOn4CLBxIg9b0MRIqv8oIaF0L65vyfHzxgg" 
-alt="Soil Readings video" width="480" height="320" border="5" /></a>
+[![ReadingsVideo](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pi%20%26%20readings/vidscreenshot.png)](https://youtu.be/7LPlyvlskEI "CENG 317 soil readings")
 
 -----
 
