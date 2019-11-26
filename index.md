@@ -12,7 +12,6 @@ Content to follow...
 I updated my sample Python program to include functionality for the watering level switch and irrigation/motor system. You can find the updated program under software/readingsupdated.py
 
 Here is the code fragment:
-
 ```python
  # Print the ADC values.
     print('| {0:>6} | {1:>6} | {2:>6} | {3:>6} |'.format(*values))
@@ -47,7 +46,6 @@ Here is the code fragment:
 ```
 
 Video of the fully functioning system (watering level is set to "medium" or 1.5 seconds):
-
 [![ReadingsVideo](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pi%20%26%20readings/vidscreenshot.png)](https://youtu.be/7LPlyvlskEI "CENG 317 soil readings")
 
 -----
