@@ -3,7 +3,9 @@ Capstone Project - Greenhouse Monitoring System
 -----
 ### November 26, 2019 - Presentation Due
 
-Content to follow...
+[PowerPoint slides](https://github.com/DBoo92/317Hardware/blob/master/presentation/317Presentation.pptx) have been posted in the presentation folder.
+
+I will be presenting this next week.
 
 -----
 
