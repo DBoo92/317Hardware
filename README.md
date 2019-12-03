@@ -35,24 +35,28 @@ Skill level/difficulty/prior experience
 
 ## Mechanical Assembly
 
-
+How to asseble PCB, how to assemble Pi
 
 ## PCB/Soldering
 
+Pre made PCB
+
 ### Subheading
 
-
+How to solder PCB
 
 ## Power Up
 
-
+Power up/test
 
 ## Unit Testing
 
-
+How to test sensor/code
 
 ## Production Testing
 
-
+How to test in production? Every unit, every 10th, random, etc
 
 ## Reproducible
+
+Is it reproducible
