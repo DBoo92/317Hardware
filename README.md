@@ -3,9 +3,9 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Bill of Materials](#billofmaterials)
-- [Time Commitment](#timecommitment)
-- [Mechanical Assembly](#mechanicalassembly)
+- [Bill of Materials](#bill-of-materials)
+- [Time Commitment](#time-commitment)
+- [Mechanical Assembly](#mechanical-assembly)
 - [PCB/Soldering](#pcbsoldering)
   * [toc.plugin](#tocplugin)
   * [toc.json](#tocjson)
