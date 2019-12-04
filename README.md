@@ -7,7 +7,8 @@
 - [Time Commitment](#time-commitment)
 - [Mechanical Assembly](#mechanical-assembly)
 - [PCB/Soldering](#pcbsoldering)
-  * [Subheading](#subheading)
+  * [Pre-made PCB](#pre-made-pcb)
+  * [Solder your own](#solder-your-own-pcb)
 - [Power Up](#power-up)
 - [Unit Testing](#unit-testing)
 - [Production Testing](#production-testing)
@@ -41,9 +42,14 @@ How to asseble PCB, how to assemble Pi
 
 Pre made PCB
 
-### Subheading
+### Pre made PCB
 
-How to solder PCB
+### Solder your own PCB
+
+1. Vias
+
+![PCBvias1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBvias1.jpg)![PCBvias2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBvias2.jpg)
+
 
 ## Power Up
 
