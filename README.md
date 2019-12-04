@@ -106,7 +106,7 @@ For the motor molex connector (circled in blue), cut off or bend the far right p
 
 7. ADC and Pi Headers
 
-![PCBheader1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBheader1.JPG "Fig 5.15: "Header holes") ![PCBheader2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBheader2.JPG "Fig 5.16: Bottom solder points") ![PCBheader3](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBheader3.JPG "Fig 5.17: Top solder points")
+![PCBheader1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBheader1.JPG "Fig 5.15: Header holes") ![PCBheader2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBheader2.JPG "Fig 5.16: Bottom solder points") ![PCBheader3](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBheader3.JPG "Fig 5.17: Top solder points")
 
 If you haven't already, now is the time to cut your headers to size. You will need one 2 pin, one 4 pin, and one 9 pin header.
 
