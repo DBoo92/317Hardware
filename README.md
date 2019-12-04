@@ -54,7 +54,7 @@ Before beginning please ensure you have an adequate workspace, the appropriate t
 
 1. Vias
 
-[![PCBvias1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBvias1.jpg)**Fig. 5.1:** Top vias] [![PCBvias2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBvias2.JPG)**Fig. 5.2:** Bottom vias] 
+![PCBvias1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBvias1.jpg)*Fig. 5.1: Top vias* ![PCBvias2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBvias2.JPG)*Fig. 5.2: Bottom vias*
 
 Begin by cutting 6 short lengths of your solid core wire and stripping them completely. Place a piece of wire through one of the holes circled in red and solder one side of it. Once the solder joint has cooled, flip the PCB over and solder the other side of the same wire. Carefully cut off the excess wire on either side down at the tip of the solder joint. Repeat this process for the other 5 holes circled in red.
 
