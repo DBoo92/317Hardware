@@ -18,11 +18,22 @@ _(TOC generated with help from [markdown-toc](https://github.com/jonschlinkert/m
 
 ## Introduction
 
-System diagram and scope
+Welcome to my CENG 317 hardware project page. This guide will provide you with instructions on how to build a capacitive soil moisture sensor using a Broadcom development platform.
+
+System diagram
+
+The system will consist of the Broadcom development platform which takes readings from the various sensors and places these into the database via WiFi. If these readings are outside of certain ranges/thresholds then the platform will send a signal out to the certain effector to adjust the environment/conditions. All of this data will viewed from within our app which will connect to the database via WiFi. The app will also be able to control/turn on the various effectors.
+
+These instructions cover the hardware aspect specifically soil moisture, while the other sensors are being covered by my group members, and the software/app is covered in a different course CENG 319 (found here).
+
 
 ## Bill of Materials
 
-List of items or materials needed/to purchase
+| Part/Material                                 | Part Number   | Supplier                       | Cost            |
+|-----------------------------------------------|---------------|--------------------------------|----------------:|
+| Raspberry Pi 4 starter kit                    | CAN123        | CanaKit (Amazon)               | $134.99         |
+| Capacitive Soil Moisture sensor               | EK1490        | Gikfun (Amazon)                | $16.50          |
+| Mini Diaphragm Pump                           | EK1550        | Gikfun (Amazon)                | $12.45          |
 
 List of tools needed
 
@@ -30,7 +41,9 @@ List of resources/outside help needed
 
 ## Time Commitment
 
-Time to complete
+Due to the variances in how to build the project, I will outline a couple different options here:
+Build with pre made PCB – 
+Build with soldering PCB – 
 
 Skill level/difficulty/prior experience
 
