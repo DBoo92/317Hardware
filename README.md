@@ -64,11 +64,12 @@ Parts Needed:
 
 Custom Parts (to be made):
 
-| Part                       | Cost     |
-|----------------------------|---------:|
-| PCB manufacturing          | $20.00   |
-| 3D printing                | $15.00   |
-| Acrylic laser cutting      | $10.00   |
+| Part                    | Source                                                                                         | Cost   |
+|-------------------------|------------------------------------------------------------------------------------------------|-------:|
+| PCB manufacturing       | [PCB file](https://github.com/DBoo92/317Hardware/blob/master/electronics/SoilMoistureFinal.fzz)| $20.00 |
+| 3D printing             | [3D file](https://github.com/DBoo92/317Hardware/blob/master/mechanical/ProjectBoxMiddleRPI.stl)| $15.00 |
+| Acrylic laser cutting   | [Acrylic Top](https://github.com/DBoo92/317Hardware/blob/master/mechanical/CaseTop.cdr)
+                            [Acrylic Bottom](https://github.com/DBoo92/317Hardware/blob/master/mechanical/CaseBottom.cdr)  | $10.00 |
 
 Tools Needed:
 
