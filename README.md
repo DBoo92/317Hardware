@@ -29,15 +29,60 @@ These instructions cover the hardware aspect specifically soil moisture, while t
 
 ## Bill of Materials
 
-| Part/Material                                 | Part Number   | Supplier                       | Cost            |
-|-----------------------------------------------|---------------|--------------------------------|----------------:|
-| Raspberry Pi 4 starter kit                    | CAN123        | CanaKit (Amazon)               | $134.99         |
-| Capacitive Soil Moisture sensor               | EK1490        | Gikfun (Amazon)                | $16.50          |
-| Mini Diaphragm Pump                           | EK1550        | Gikfun (Amazon)                | $12.45          |
+Parts Needed:
 
-List of tools needed
+| Part/Material                         | Part Number   | Supplier                       | Qty    | Cost     |
+|---------------------------------------|---------------|--------------------------------|:------:|---------:|
+| Raspberry Pi 4 starter kit            | CAN123        | CanaKit (Amazon)               | 1      | $134.9   |
+| Capacitive Soil Moisture sensor       | EK1490        | Gikfun (Amazon)                | 1      | $16.50   |
+| Mini Diaphragm Pump                   | EK1550        | Gikfun (Amazon)                | 1      | $12.45   |
+| ADS1115 (or ADS1015)                  |               | Universal Solder (Amazon)      | 1      | $7.89    |
+| 1K resistor                           |               |                                | 3      | $0.00    |
+| PN2222A transistor                    |               |                                | 1      | $0.00    |
+| IN4001 diode                          |               |                                | 1      | $0.00    |
+| SP3T switch                           |               |                                | 1      | $0.00    |
+| 2.5mm DC jack                         |               |                                | 1      | $0.00    |
+| 6v - 12v power supply (2.5mm plug)    |               |                                | 1      | $0.00    |
+| 60mm case fan (with screws)           |               |                                | 1      | $0.00    |
+| 9 pin GPIO header (single row)        |               |                                | 1      | $0.00    |
+| 4 pin GPIO header (single row)        |               |                                | 1      | $0.00    |
+| 2 pin GPIO header (single row)        |               |                                | 1      | $0.00    |
+| 3 pin Molex connectors (male + female)|               |                                | 2      | $0.00    |
+| 22 AWG wire                           |               |                                | 1 foot | $0.00    |
+| 4mm heatshrink                        |               |                                | 1 foot | $0.00    |
+| 60/40 solder (small roll)             |               |                                | 1      | $0.00    |
+| Cone spray nozzle (3/8" thread)       |               |                                | 1      | $0.00    |
+| 1/4" barbed to 3/8" NPT fitting       |               |                                | 1      | $0.00    |
+| Clear PVC tube 1/4" ID                |               |                                | 4 feet | $0.00    |
+| M5 x 0.8 x 40mm socket head screw     |               |                                | 4      | $0.00    |
+| M3 x 0.5 x 16mm socket head screw     |               |                                | 4      | $0.00    |
+| M2.5 x 0.45 x 10mm button head screw  |               |                                | 4      | $0.00    |
+| M3 x 0.5 nuts                         |               |                                | 4      | $0.00    |
+| M3 washers                            |               |                                | 4      | $0.00    |
+| 10mm plastic risers (with nuts)       |               |                                | 4      | $0.00    |
+| 12" x 12" x 3mm acrylic               |               |                                | 1      | #10.00   |
 
-List of resources/outside help needed
+Custom Parts (to be made):
+
+| Part                       | Cost     |
+|----------------------------|---------:|
+| PCB manufacturing          | $20.00   |
+| 3D printing                | $15.00   |
+| Acrylic laser cutting      | $10.00   |
+
+Tools Needed:
+
+| Tool                       | 
+|----------------------------|
+| Soldering iron             |
+| Wire strippers             |
+| Diagonal cutting pliers    |
+| Heat gun (or blow dryer)   |
+| M5 x 0.8 tap + handle      |
+| Square file                |
+| 5mm allen key              |
+| 3mm allen key              |
+| Philips #2 screwdriver     |
 
 ## Time Commitment
 
