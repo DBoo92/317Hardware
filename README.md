@@ -54,17 +54,17 @@ Parts Needed:
 | M3 x 0.5 x 16mm socket head screw     |               | Bolts Plus                             | 4      | $1.60            |
 | M2.5 x 0.45 x 10mm button head screw  |               | Bolts Plus                             | 4      | $1.20            |
 | M3 x 0.5 nuts                         |               | Bolts Plus                             | 4      | $0.40            |
-| M3 washers                            |               | Bolts Plus                             | 8      | $0.40            |
+| M3 washers                            |               | Bolts Plus                             | 20     | $1.00            |
 | 10mm PCB risers (with nuts)           |               | Hardware store                         | 4      | $0.80            |
 | 12" x 12" x 1/8" acrylic              |               | Hardware store                         | 1      | $10.00           |
 
 Custom Parts (to be made):
 
-| Part                    | Source file                                                                                    | Cost   |
-|-------------------------|------------------------------------------------------------------------------------------------|-------:|
-| PCB manufacturing       | [PCB file](https://github.com/DBoo92/317Hardware/blob/master/electronics/SoilMoistureFinal.fzz)| $20.00 |
-| 3D printing             | [3D file](https://github.com/DBoo92/317Hardware/blob/master/mechanical/ProjectBoxMiddleRPI.stl)| $15.00 |
-| Acrylic laser cutting   | [Acrylic Top](https://github.com/DBoo92/317Hardware/blob/master/mechanical/CaseTop.cdr) <br>                                             [Acrylic Bottom](https://github.com/DBoo92/317Hardware/blob/master/mechanical/CaseBottom.cdr) <br>                                       [Acrylic Washers]()                                                                            | $10.00 |
+| Part                  | Source file                                                                                       | Cost   |
+|-----------------------|---------------------------------------------------------------------------------------------------|-------:|
+| PCB manufacturing     | [PCB file](hhttps://github.com/DBoo92/317Hardware/blob/master/electronics/SoilMoisture_Gerber.zip)| $20.00 |
+| 3D printing           | [3D file](https://github.com/DBoo92/317Hardware/blob/master/mechanical/ProjectBoxMiddleRPI.stl)   | $15.00 |
+| Acrylic laser cutting | [Acrylic Top](https://github.com/DBoo92/317Hardware/blob/master/mechanical/CaseTop.cdr) <br>                                             [Acrylic Bottom](https://github.com/DBoo92/317Hardware/blob/master/mechanical/CaseBottom.cdr)     | $10.00 |
 
 >Tip: If you haven't already ordered/received the custom parts above, please find a PCB manufacturer, 3D print shop, and a laser cutting shop. Use the source files above and have these parts made before beginning your project.
 
@@ -78,7 +78,7 @@ Tools Needed:
 | Heat gun (or blow dryer)   |
 | M5 x 0.8 tap + handle      |
 | Square file                |
-| 5mm allen key              |
+| 4mm allen key              |
 | 2.5mm allen key            |
 | 1.5mm allen key            |
 | Philips #2 screwdriver     |
@@ -99,13 +99,21 @@ Follow the steps below to assemble/solder your PCB.
 
 Before beginning please ensure you have an adequate workspace, the appropriate tools, and that everything is clean and tidy. The appropriate safety equipment is outlined in the website above.
 
-### 1. Vias
+### ADS1115 soldering
+
+![ADSsolder](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/adcsolder.jpg)
+
+Place the 10 pin header through the ADS1115 with the short side of pins going through the holes. Solder each pin as circled in red above. Allow time to cool between each solder joint.
+
+### PCB soldering
+
+#### 1. Vias
 
 ![PCBvias1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBvias1.jpg "Fig 5.1: Top vias solder points") ![PCBvias2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBvias2.JPG "Fig. 5.2: Bottom vias solder points")
 
 Begin by cutting 6 short lengths of your solid core wire and stripping them completely. Place a piece of wire through one of the holes circled in red and solder one side of it. Once the solder joint has cooled, flip the PCB over and solder the other side of the same wire. Carefully cut off the excess wire on either side down at the tip of the solder joint. Repeat this process for the other 5 holes circled in red.
 
-### 2. DC Jack and SP3T Switch
+#### 2. DC Jack and SP3T Switch
 
 ![PCBjack1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBjack1.JPG "Fig 5.3: Top jack and switch") ![PCBjack2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBjack2.JPG "Fig 5.4: Bottom solder points")
 
@@ -113,13 +121,13 @@ Place the DC jack (circled in blue) into its mounting holes on the PCB. Ensure t
 
 Place the SP3T switch (circled in red) into its mounting holes on the PCB. Ensure that the switch is sitting on top of the board, facing out the side, and its pins stick out the bottom. Bend the pins slightly to help hold the switch in place. Solder each pin individually on the bottom of the board (the second pin from the left will remain empty). After this is done solder just the far left hand pin from the top as well (this is the interior red circle on the first image). 
 
-### 3. Resistors
+#### 3. Resistors
 
 ![PCBresist1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBresist1.JPG "Fig 5.5: Resistor holes") ![PCBresist2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBresist2.JPG "Fig 5.6: Top resistor solder points") ![PCBresist3](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBresist3.JPG "Fig 5.7: Bottom resistor solder points")
 
 Bend the legs on your 1k ohm resistors so each resistor aligns with a pair of holes circled in red. Place the first resistor into its mounting holes from the top of the board and bend the legs from underneath to hold it in place. Solder both the top and bottom holes (allow time to cool between solder joints to prevent overheating the resistor). Do this for the other 2 resistors.
 
-### 4. Diode
+#### 4. Diode
 
 ![PCBdiode1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBdiode1.JPG "Fig 5.8: Diode holes") ![PCBdiode2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBdiode2.JPG "Fig 5.9: Bottom diode solder points")
 
@@ -129,7 +137,7 @@ Bend the legs on your diode so it aligns with the pair of holes circled in red.
 
 Place the diode into its mounting holes from the top of the board and bend the legs from underneath to hold it in place. Solder the diode from underneath the board (allow time to cool between solder joints to prevent damaging the diode).
 
-### 5. Transistor
+#### 5. Transistor
 
 ![PCBtransist1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBtransist1.JPG "Fig 5.10: Transistor holes") ![PCBtransist2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBtransist2.JPG "Fig 5.11: Bottom transistor solder points")
 
@@ -139,7 +147,7 @@ Place the transistor into its mounting holes from the top of the board.
 
 Bend the pins on the transistor from underneath to help hold it in place. Solder the transistor pins from underneath the board. It is very important you allow time to cool between each solder joint as transistors are very sensistive to heat.
 
-### 6. Molex Connectors
+#### 6. Molex Connectors
 
 ![PCBmolex1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBmolex1.JPG "Fig 5.12: Molex holes") ![PCBmolex2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBmolex2.JPG "Fig 5.13: Bottom molex solder points") ![PCBmolex3](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBmolex3.JPG "Fig 5.14: Top molex orientation")
 
@@ -151,7 +159,7 @@ Bend the pins from underneath to hold it in place. Solder each pin from undernea
 
 For the motor molex connector (circled in blue), cut off or bend the far right pin flat as it will not be used (interior blue circle on the third image). Place the connector into its mounting holes from the top of the board (the direction the plastic tab faces isn't critical). Solder the two pins from underneath the board.
 
-### 7. ADC and Pi Headers
+#### 7. ADC and Pi Headers
 
 ![PCBheader1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBheader1.JPG "Fig 5.15: Header holes") ![PCBheader2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBheader2.JPG "Fig 5.16: Bottom solder points") ![PCBheader3](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBheader3.JPG "Fig 5.17: Top solder points")
 
