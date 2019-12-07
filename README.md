@@ -4,7 +4,7 @@
 
 - [Introduction](#introduction)
 - [Bill of Materials](#bill-of-materials)
-  * [Parts list:](#parts-list)
+  * [Parts list](#parts-list)
   * [Custom Parts](#custom-parts)
   * [Tools List](#tools-list)
 - [Time Commitment](#time-commitment)
@@ -21,7 +21,7 @@
   * [Mount motor](#mount-motor)
   * [Install case fan](#install-case-fan)
   * [Assemble case](#assemble-case)
-  * [Plug in connectors](#plug-in-cnnectors)
+  * [Plug in connectors](#plug-in-connectors)
   * [Water lines](#water-lines)
   * [Spray nozzle](#spray-nozzle)
 - [Power Up](#power-up)
