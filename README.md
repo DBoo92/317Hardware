@@ -183,13 +183,13 @@ Cut two pieces of 22 AWG solid wire approximately 8" long and strip 1/4" off eac
 
 ![motorwires](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/motorpins.jpg) ![motormolex](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/molex3pin.jpg)
 
-Using the wire strippers crimp a molex pin on the open end of each motor wire (shown in the first image). Apply a small amount of solder to the crimp connection to strengthen it. Once the solder has cooled, insert the pins into holes 1 and 2 as labelled in the second picture (doesn't matter which wire goes in which hole).
+Using the wire strippers crimp a molex pin on the open end of each motor wire (shown in the first image). Apply a small amount of solder to the crimp connection to strengthen it. Once the solder has cooled, insert the pins into holes 1 and 2 as labelled in the second picture (doesn't matter which pin goes in which hole).
 
 ### Sensor soldering
 
 ![sensorwires](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/sensorpins.jpg) ![sensormolex](ttps://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/molex3pin.jpg)
 
-Cut the stock connector off the soil sensor using the diagonal cutters. Make your cut close to the existing connector so the wires stay long. Strip about 1/4" off the end of each wire. Crimp a molex pin on the open end of each wire (shown in first image) using the wire cutters. Apply a small amount of solder to the crimp connection to strengthen it. Once the solder has cooled, insert the Vcc pin into hole 1, Aout pin hole 2, and Gnd pin hole 3 (as shown labelled in the second picture).
+Cut the stock connector off the soil sensor using the diagonal cutters. Make your cut close to the existing connector so the wires stay long. Strip about 1/4" off the end of each wire. Crimp a molex pin on the open end of each wire (shown in first image) using the wire strippers. Apply a small amount of solder to the crimp connection to strengthen it. Once the solder has cooled, insert the Vcc pin into hole 1, Aout pin into hole 2, and Gnd pin into hole 3 (as labelled in the second picture).
 
 > Make sure the pins go into the appropriate connector hole otherwise you could damage the sensor/circuit.
 
