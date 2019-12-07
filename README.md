@@ -35,20 +35,20 @@ Parts Needed:
 | Capacitive Soil Moisture sensor       | EK1940        | Gikfun (Amazon)                        | 1      | $8.48            |
 | Mini Diaphragm Pump                   | EK1856C       | Gikfun (Amazon)                        | 1      | $11.67           |
 | ADS1115 (or ADS1015)                  | 4260474032037 | Universal Solder (Amazon)              | 1      | $7.89            |
-| 1K resistor                           |               | Electronics store                      | 3      | $0.30            |
+| 1K ohm resistor                       |               | Electronics store                      | 3      | $0.30            |
 | PN2222A transistor                    |               | Electronics store                      | 1      | $0.25            |
 | IN4001 diode                          |               | Electronics store                      | 1      | $0.15            |
-| 1P3T switch                           | SMC-549-1     | Sayal Electronics                      | 1      | $2.50            |
-| 2.1mm DC power jack                   | GAK-1973E-2   | Sayal Electronics                      | 1      | $1.50            |
+| 1P3T switch                           | SMC-549-1     | Sayal Electronics                      | 1      | $1.50            |
+| 2.1mm DC power jack                   | GAK-1973E-2   | Sayal Electronics                      | 1      | $0.80            |
 | 6v - 12v power supply (2.1mm plug)    |               | Electronics store                      | 1      | $9.95            |
-| 50mm case fan (with screws)           |               | Electronics/computer store             | 1      | $3.50            |
+| 50mm case fan (with screws)           | 8797433       | Princess Auto                          | 1      | $2.99            |
 | 20 pin GPIO header (single row)       |               | Electronics store                      | 1      | $0.50            |
 | 3 pin Molex connectors (female)       | 37-603-5      | Mode Electronics (Sayal Electronics)   | 2      | $1.00            |
 | 3 pin Molex header (male)             | 37-6203-5     | Mode Electronics (Sayal Electronics)   | 2      | $1.00            |
 | 22 AWG solid wire                     |               | Electronics store                      | 1 foot | $0.50            |
 | 1/8" heatshrink                       |               | Electronics store                      | 1 foot | $0.40            |
 | 63/37 solder (small roll)             | 4880-18G      | MG Chemicals (Sayal Electronics)       | 18g    | $3.95            |
-| Cone spray nozzle (3/8" thread)       | 8418832       | Valley Industries (Princess Auto)      | 1      | $6.49            |
+| Cone spray nozzle (3/8" thread)       | SG-4200TIP-CSK| Valley Industries (Princess Auto)      | 1      | $6.49            |
 | 1/4" barbed to 3/8" NPT fitting       | 903-41161001  | Sioux Chief (Home Depot)               | 1      | $3.25            |
 | Clear vinyl tube 1/4" ID              |               | Hardware store                         | 4 feet | $2.00            |
 | M5 x 0.8 x 40mm socket head screw     |               | Bolts Plus                             | 4      | $2.80            |
