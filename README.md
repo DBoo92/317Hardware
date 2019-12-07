@@ -169,6 +169,12 @@ Place the 4 pin header onto the Vcc, Gnd, SDA, and SCL pins of the ADS1115. Plac
 
 Place the 9 pin header onto your Raspberry Pi so it sits on pins 1, 3, 5, 7, 9, 11, 13, 15, and 17. Now place the entire PCB onto the 9 pin header from the bottom (the pins should stick out the top of the PCB). Prop up the PCB so it is parallel and square with the Raspberry Pi. Solder the two outermost pins from the top side of the board (this is done to secure it). Now remove the PCB from the Pi with the 9 pin header attached. Finish soldering the other 7 pins from the top side of the board.
 
+### Motor soldering
+
+![motorsolder](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/motorpigtail.jpg)
+
+Cut two pieces of 22 AWG solid wire approximately 8" long and strip 1/4" off each end. Wrap the end of one wire onto one of the motor terminals. Solder this connection. Cut off a 2" piece of heatshrink and slide it down the wire and over the connection. Use the heat gun to heat up the tubing and shrink it. Repeat this process for the second wire and the second motor terminal.
+
 
 ## Mechanical Assembly
 
