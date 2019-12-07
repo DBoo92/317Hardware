@@ -93,6 +93,7 @@ These instructions cover the hardware aspect specifically soil moisture, while t
 | Wire strippers             |
 | Diagonal cutting pliers    |
 | Heat gun (or blow dryer)   |
+| Digital Multimeter         |
 | M5 x 0.8 tap + handle      |
 | Square file                |
 | 4mm allen key              |
@@ -186,6 +187,10 @@ Place the 4 pin header onto the Vcc, Gnd, SDA, and SCL pins of the ADS1115. Plac
 
 Place the 9 pin header onto your Raspberry Pi so it sits on pins 1, 3, 5, 7, 9, 11, 13, 15, and 17. Now place the entire PCB onto the 9 pin header from the bottom (the pins should stick out the top of the PCB). Prop up the PCB so it is parallel and square with the Raspberry Pi. Solder the two outermost pins from the top side of the board (this is done to secure it). Now remove the PCB from the Pi with the 9 pin header attached. Finish soldering the other 7 pins from the top side of the board.
 
+> Test 1: It is recommended to do continuity tests on side-by-side solder joints or any connections that look close to each other/touching. This is a precaution to help ensure there are no shorts between solder joints.
+
+> Test 2: Use a jumper wire to connect Vcc and Gnd together from the PCB sensor circuit (use the jumper wire in the header). Then, using a DMM set to ohms, measure resistance between Gnd and A0 on your ADC. You should see a reading between a few hundred thousand ohms and a few million ohms. If you see this reading it indicates your sensor circuit is wired correctly.
+
 ### Motor soldering
 
 ![motorsolder](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/motorpigtail.jpg)
@@ -278,7 +283,46 @@ We are now ready to test and then power up.
 
 ## Power Up
 
-Power up/test
+> Tip: If you haven't already, please complete the 2 tests listed on the bottom of the PCB soldering section. These will help ensure that no damage is done to your Pi during initial power up.
+
+### Load OS
+
+1. Unfortunately the OS file is too large to post on Github. However, the link below will take you to the Raspberry Pi download page where you can get it. There you can download the OS as either a torrent or a zip file. For this project it is recommended to download the full "Raspbian Buster with desktop and recommended software". You will need at least an 8GB SD card for this.
+
+[Download Raspbian OS](https://www.raspberrypi.org/downloads/raspbian/)
+
+2. Once downloaded, follow the link below for instructions on flashing the OS onto your SD card.
+
+[Install Raspbian OS](https://www.raspberrypi.org/documentation/installation/installing-images/README.md)
+
+3. Finally, follow the link below for help with the intital power up/configuration setup:
+
+[Configure Raspbian](https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up/4)
+
+4. The Pi starter kit comes with an HDMI cable, so for your initial tests you will be connecting it to an HDMI monitor. However, in the future you are recommended to download VNC Viewer to connect remotely via WiFi or ethernet.
+
+[Download VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/)
+
+5. Use the guide below to help you setup/use VNC Viewer and connect to your Pi.
+
+[Setup VNC Viewer](https://magpi.raspberrypi.org/articles/vnc-raspberry-pi)
+
+### Import libraries
+
+Now that the Pi is setup and running you will need to import this library to access the readings from the ADS1115.
+
+Open the terminal and run the following commands one at a time. You may see some text appear between each command, allow it to finish before inputting the next command.
+
+```sh
+sudo apt-get update
+sudo apt-get install build-essential python-dev python-smbus git
+cd ~
+git clone https://github.com/adafruit/Adafruit_Python_ADS1x15.git
+cd Adafruit_Python_ADS1x15
+sudo python setup.py install
+```
+
+You now have the necessary libraries and some sample code to work with.
 
 
 ## Unit Testing
