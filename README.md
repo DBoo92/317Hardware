@@ -23,11 +23,11 @@
 
 Welcome to my CENG 317 hardware project page. This guide will provide you with instructions on how to build a capacitive soil moisture sensor using a Broadcom development platform.
 
-System diagram
+![System diagram]()
 
 The system will consist of the Broadcom development platform which takes readings from the various sensors and places these into the database via WiFi. If these readings are outside of certain ranges/thresholds then the platform will send a signal out to the certain effector to adjust the environment/conditions. All of this data will viewed from within our app which will connect to the database via WiFi. The app will also be able to control/turn on the various effectors.
 
-These instructions cover the hardware aspect specifically soil moisture, while the other sensors are being covered by my group members, and the software/app is covered in a different course CENG 319 (found here).
+These instructions cover the hardware aspect specifically soil moisture, while the other sensors are being covered by my group members, and the software/app is covered in a different course CENG 319 [found here]().
 
 
 ## Bill of Materials
@@ -155,7 +155,7 @@ Bend the pins on the transistor from underneath to help hold it in place. Solder
 
 #### 6. Molex Connectors
 
-![PCBmolex1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBmolex1.JPG "Fig 5.12: Molex holes") ![PCBmolex2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBmolex2.JPG "Fig 5.13: Bottom molex solder points") ![PCBmolex3](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBmolex3.JPG "Fig 5.14: Top molex orientation")
+![PCBmolex1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBmolex1.JPG "Fig 5.12: Molex holes") ![PCBmolex2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBmolex2.JPG "Fig 5.13: Bottom molex solder points") ![PCBmolex3](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/molexpcb.jpg "Fig 5.14: Top molex orientation")
 
 Place the sensor molex connector (circled in red) into its mounting holes from the top of the board.
 
@@ -163,7 +163,7 @@ Place the sensor molex connector (circled in red) into its mounting holes from t
 
 Bend the pins from underneath to hold it in place. Solder each pin from underneath the board.
 
-For the motor molex connector (circled in blue), cut off or bend the far right pin flat as it will not be used (interior blue circle on the third image). Place the connector into its mounting holes from the top of the board (the direction the plastic tab faces isn't critical). Solder the two pins from underneath the board.
+For the motor molex connector (first image circled in blue), cut off or bend flat the bottom of the pin as it will interfere with mounting (blue circle on the third image). Place the connector into its mounting holes from the top of the board (the direction the plastic tab faces isn't critical). Solder the two pins from underneath the board.
 
 #### 7. ADC and Pi Headers
 
@@ -180,6 +180,18 @@ Place the 9 pin header onto your Raspberry Pi so it sits on pins 1, 3, 5, 7, 9, 
 ![motorsolder](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/motorpigtail.jpg)
 
 Cut two pieces of 22 AWG solid wire approximately 8" long and strip 1/4" off each end. Wrap the end of one wire onto one of the motor terminals. Solder this connection. Cut off a 2" piece of heatshrink and slide it down the wire and over the connection. Use the heat gun to heat up the tubing and shrink it. Repeat this process for the second wire and the second motor terminal.
+
+![motorwires](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/motorpins.jpg) ![motormolex](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/molex3pin.jpg)
+
+Using the wire strippers crimp a molex pin on the open end of each motor wire (shown in the first image). Apply a small amount of solder to the crimp connection to strengthen it. Once the solder has cooled, insert the pins into holes 1 and 2 as labelled in the second picture (doesn't matter which wire goes in which hole).
+
+### Sensor soldering
+
+![sensorwires](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/sensorpins.jpg) ![sensormolex](ttps://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/molex3pin.jpg)
+
+Cut the stock connector off the soil sensor using the diagonal cutters. Make your cut close to the existing connector so the wires stay long. Strip about 1/4" off the end of each wire. Crimp a molex pin on the open end of each wire (shown in first image) using the wire cutters. Apply a small amount of solder to the crimp connection to strengthen it. Once the solder has cooled, insert the Vcc pin into hole 1, Aout pin hole 2, and Gnd pin hole 3 (as shown labelled in the second picture).
+
+> Make sure the pins go into the appropriate connector hole otherwise you could damage the sensor/circuit.
 
 
 ## Mechanical Assembly
