@@ -2,15 +2,18 @@
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
-2. [Bill of Materials](#bill-of-materials)
-3. [Time Commitment](#time-commitment)
-4. [PCB/Soldering](#pcbsoldering)
-5. [Mechanical Assembly](#mechanical-assembly)
-6. [Power Up](#power-up)
-7. [Unit Testing](#unit-testing)
-8. [Production Testing](#production-testing)
-9. [Reproducible](#reproducible)
+- [1. Introduction](#introduction)
+- [2. Bill of Materials](#bill-of-materials)
+  * [2.1 Parts list:](#parts-list)
+  * [2.2 Custom Parts](#custom-parts)
+  * [2.3 Tools List](#tools-list)
+- [3. Time Commitment](#time-commitment)
+- [4. PCB/Soldering](#pcbsoldering)
+- [5. Mechanical Assembly](#mechanical-assembly)
+- [6. Power Up](#power-up)
+- [7. Unit Testing](#unit-testing)
+- [8. Production Testing](#production-testing)
+- [9. Reproducible](#reproducible)
 
 
 ## 1. Introduction
@@ -26,7 +29,7 @@ These instructions cover the hardware aspect specifically soil moisture, while t
 
 ## 2. Bill of Materials
 
-Parts Needed:
+### 2.1 Parts List:
 
 | Part/Material                         | Part Number   | Supplier                               | Qty    | Approx. Cost     |
 |---------------------------------------|---------------|----------------------------------------|:------:|-----------------:|
@@ -58,7 +61,7 @@ Parts Needed:
 | 10mm PCB risers (with nuts)           |               | Hardware store                         | 4      | $0.80            |
 | 12" x 12" x 1/8" acrylic              |               | Hardware store                         | 1      | $10.00           |
 
-Custom Parts (to be made):
+### 2.2 Custom Parts:
 
 | Part                  | Source file                                                                                       | Cost   |
 |-----------------------|---------------------------------------------------------------------------------------------------|-------:|
@@ -68,7 +71,7 @@ Custom Parts (to be made):
 
 >Tip: If you haven't already ordered/received the custom parts above, please find a PCB manufacturer, 3D print shop, and a laser cutting shop. Use the source files above and have these parts made before beginning your project.
 
-Tools Needed:
+### 2.3 Tools List:
 
 | Tool                       | 
 |----------------------------|
