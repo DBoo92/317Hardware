@@ -25,20 +25,25 @@
   * [Water lines](#water-lines)
   * [Spray nozzle](#spray-nozzle)
 - [Power Up](#power-up)
+  * [Load OS](#load-os)
+  * [Import libraries](#import-libraries)
 - [Unit Testing](#unit-testing)
+  * [Sensor test](#sensor-test)
+  * [Full test](#full-test)
 - [Production Testing](#production-testing)
-- [Reproducible](#reproducible)
 
 
 ## Introduction
 
-Welcome to my CENG 317 hardware project page. This guide will provide you with instructions on how to build a capacitive soil moisture sensor using a Broadcom development platform.
+Welcome to my CENG 317 hardware project page. This guide will provide you with instructions on how to build a capacitive soil moisture sensor using a Broadcom development platform. Here is a picture of the proposed systemm:
 
-![System diagram]()
+![Systemdiagram](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/intro/systemdia.png)
 
-The system will consist of the Broadcom development platform which takes readings from the various sensors and places these into the database via WiFi. If these readings are outside of certain ranges/thresholds then the platform will send a signal out to the certain effector to adjust the environment/conditions. All of this data will viewed from within our app which will connect to the database via WiFi. The app will also be able to control/turn on the various effectors.
+The system will consist of the Raspberry Pi which takes readings from various sensors and places them into a Firebase database via WiFi. If these readings are outside of certain ranges/thresholds the platform will send a signal out to a certain effector to adjust the environment/conditions. All of this data will be viewable from within our app which will connect to the database via WiFi. The app will also be able to control/turn on the various effectors through Bluetooth.
 
-These instructions cover the hardware aspect specifically soil moisture, while the other sensors are being covered by my group members, and the software/app is covered in a different course CENG 319 [found here]().
+The BME 680 and PT100 sensors are being covered by my group members, and the software/app is covered in a different course CENG 319 - [GreenSense App](https://github.com/Aidenbolos/Green-Sense). These build instructions will focus solely on the capacitive soil moisture platform (seen in the system diagram above and the diagram below).
+
+![soilmoisture](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/intro/caseabove.jpg)
 
 
 ## Bill of Materials
@@ -327,14 +332,16 @@ You now have the necessary libraries and some sample code to work with.
 
 ## Unit Testing
 
-How
+### Sensor test
+
+
+
+# Full test
+
+
 
 
 ## Production Testing
 
 How to test in production? Every unit, every 10th, random, etc
 
-
-## Reproducible
-
-Is it reproducible
