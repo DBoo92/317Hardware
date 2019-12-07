@@ -2,21 +2,24 @@
 
 ## Table of Contents
 
-- [1. Introduction](#introduction)
-- [2. Bill of Materials](#bill-of-materials)
-  * [2.1 Parts list:](#parts-list)
-  * [2.2 Custom Parts](#custom-parts)
-  * [2.3 Tools List](#tools-list)
-- [3. Time Commitment](#time-commitment)
-- [4. PCB/Soldering](#pcbsoldering)
-- [5. Mechanical Assembly](#mechanical-assembly)
-- [6. Power Up](#power-up)
-- [7. Unit Testing](#unit-testing)
-- [8. Production Testing](#production-testing)
-- [9. Reproducible](#reproducible)
+- [Introduction](#introduction)
+- [Bill of Materials](#bill-of-materials)
+  * [Parts list:](#parts-list)
+  * [Custom Parts](#custom-parts)
+  * [Tools List](#tools-list)
+- [Time Commitment](#time-commitment)
+- [PCB/Soldering](#pcbsoldering)
+  * [ADS1115 soldering](#ads1115-soldering)
+  * [PCB soldering](#pcb-soldering)
+  * [Motor soldering](#motor-soldering)
+- [Mechanical Assembly](#mechanical-assembly)
+- [Power Up](#power-up)
+- [Unit Testing](#unit-testing)
+- [Production Testing](#production-testing)
+- [Reproducible](#reproducible)
 
 
-## 1. Introduction
+## Introduction
 
 Welcome to my CENG 317 hardware project page. This guide will provide you with instructions on how to build a capacitive soil moisture sensor using a Broadcom development platform.
 
@@ -27,9 +30,9 @@ The system will consist of the Broadcom development platform which takes reading
 These instructions cover the hardware aspect specifically soil moisture, while the other sensors are being covered by my group members, and the software/app is covered in a different course CENG 319 (found here).
 
 
-## 2. Bill of Materials
+## Bill of Materials
 
-### 2.1 Parts List:
+### Parts List:
 
 | Part/Material                         | Part Number   | Supplier                               | Qty    | Approx. Cost     |
 |---------------------------------------|---------------|----------------------------------------|:------:|-----------------:|
@@ -61,7 +64,7 @@ These instructions cover the hardware aspect specifically soil moisture, while t
 | 10mm PCB risers (with nuts)           |               | Hardware store                         | 4      | $0.80            |
 | 12" x 12" x 1/8" acrylic              |               | Hardware store                         | 1      | $10.00           |
 
-### 2.2 Custom Parts:
+### Custom Parts:
 
 | Part                  | Source file                                                                                       | Cost   |
 |-----------------------|---------------------------------------------------------------------------------------------------|-------:|
@@ -71,7 +74,7 @@ These instructions cover the hardware aspect specifically soil moisture, while t
 
 >Tip: If you haven't already ordered/received the custom parts above, please find a PCB manufacturer, 3D print shop, and a laser cutting shop. Use the source files above and have these parts made before beginning your project.
 
-### 2.3 Tools List:
+### Tools List:
 
 | Tool                       | 
 |----------------------------|
@@ -87,14 +90,14 @@ These instructions cover the hardware aspect specifically soil moisture, while t
 | Philips #2 screwdriver     |
 
 
-## 3. Time Commitment
+## Time Commitment
 
 The time required to complete this project is approximately: _______ hours
 
 It is best to approach this project with mild/moderate experience in electronics and circuits, tools and assembly, and computers. However, my aim is to make this guide thorough enough for people of all experience levels.
 
 
-## 4. PCB/Soldering
+## PCB/Soldering
 
 Follow the steps below to assemble/solder your PCB.
 
@@ -102,13 +105,13 @@ Follow the steps below to assemble/solder your PCB.
 
 Before beginning please ensure you have an adequate workspace, the appropriate tools, and that everything is clean and tidy. The appropriate safety equipment is outlined in the website above.
 
-### 4.1 ADS1115 soldering
+### ADS1115 soldering
 
 ![ADSsolder](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/adcsolder.jpg)
 
 Place the 10 pin header through the ADS1115 with the short side of pins going through the holes. Solder each pin as circled in red above. Allow time to cool between each solder joint.
 
-### 4.2 PCB soldering
+### PCB soldering
 
 #### 1. Vias
 
@@ -172,33 +175,33 @@ Place the 4 pin header onto the Vcc, Gnd, SDA, and SCL pins of the ADS1115. Plac
 
 Place the 9 pin header onto your Raspberry Pi so it sits on pins 1, 3, 5, 7, 9, 11, 13, 15, and 17. Now place the entire PCB onto the 9 pin header from the bottom (the pins should stick out the top of the PCB). Prop up the PCB so it is parallel and square with the Raspberry Pi. Solder the two outermost pins from the top side of the board (this is done to secure it). Now remove the PCB from the Pi with the 9 pin header attached. Finish soldering the other 7 pins from the top side of the board.
 
-### 4.3 Motor soldering
+### Motor soldering
 
 ![motorsolder](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/motorpigtail.jpg)
 
 Cut two pieces of 22 AWG solid wire approximately 8" long and strip 1/4" off each end. Wrap the end of one wire onto one of the motor terminals. Solder this connection. Cut off a 2" piece of heatshrink and slide it down the wire and over the connection. Use the heat gun to heat up the tubing and shrink it. Repeat this process for the second wire and the second motor terminal.
 
 
-## 5. Mechanical Assembly
+## Mechanical Assembly
 
 How to asseble PCB, how to assemble Pi
 
 
-## 6. Power Up
+## Power Up
 
 Power up/test
 
 
-## 7. Unit Testing
+## Unit Testing
 
 How
 
 
-## 8. Production Testing
+## Production Testing
 
 How to test in production? Every unit, every 10th, random, etc
 
 
-## 9. Reproducible
+## Reproducible
 
 Is it reproducible
