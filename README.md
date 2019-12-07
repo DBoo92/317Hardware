@@ -5,14 +5,13 @@
 - [Introduction](#introduction)
 - [Bill of Materials](#bill-of-materials)
 - [Time Commitment](#time-commitment)
-- [Mechanical Assembly](#mechanical-assembly)
 - [PCB/Soldering](#pcbsoldering)
+- [Mechanical Assembly](#mechanical-assembly)
 - [Power Up](#power-up)
 - [Unit Testing](#unit-testing)
 - [Production Testing](#production-testing)
 - [Reproducible](#reproducible)
 
-_(TOC generated with help from [markdown-toc](https://github.com/jonschlinkert/markdown-toc))_
 
 ## Introduction
 
@@ -41,7 +40,7 @@ Parts Needed:
 | 1P3T switch                           | SMC-549-1     | Sayal Electronics                      | 1      | $1.50            |
 | 2.1mm DC power jack                   | GAK-1973E-2   | Sayal Electronics                      | 1      | $0.80            |
 | 6v - 12v power supply (2.1mm plug)    |               | Electronics store                      | 1      | $9.95            |
-| 50mm case fan (with screws)           | 8797433       | Princess Auto                          | 1      | $2.99            |
+| 50mm case fan (with screws)           | 8880205       | Princess Auto                          | 1      | $1.99            |
 | 20 pin GPIO header (single row)       |               | Electronics store                      | 1      | $0.50            |
 | 3 pin Molex connectors (female)       | 37-603-5      | Mode Electronics (Sayal Electronics)   | 2      | $1.00            |
 | 3 pin Molex header (male)             | 37-6203-5     | Mode Electronics (Sayal Electronics)   | 2      | $1.00            |
@@ -61,11 +60,13 @@ Parts Needed:
 
 Custom Parts (to be made):
 
-| Part                    | Source                                                                                         | Cost   |
+| Part                    | Source file                                                                                    | Cost   |
 |-------------------------|------------------------------------------------------------------------------------------------|-------:|
 | PCB manufacturing       | [PCB file](https://github.com/DBoo92/317Hardware/blob/master/electronics/SoilMoistureFinal.fzz)| $20.00 |
 | 3D printing             | [3D file](https://github.com/DBoo92/317Hardware/blob/master/mechanical/ProjectBoxMiddleRPI.stl)| $15.00 |
 | Acrylic laser cutting   | [Acrylic Top](https://github.com/DBoo92/317Hardware/blob/master/mechanical/CaseTop.cdr) <br>                                             [Acrylic Bottom](https://github.com/DBoo92/317Hardware/blob/master/mechanical/CaseBottom.cdr) <br>                                       [Acrylic Washers]()                                                                            | $10.00 |
+
+>Tip: If you haven't already ordered/received the custom parts above, please find a PCB manufacturer, 3D print shop, and a laser cutting shop. Use the source files above and have these parts made before beginning your project.
 
 Tools Needed:
 
@@ -78,22 +79,17 @@ Tools Needed:
 | M5 x 0.8 tap + handle      |
 | Square file                |
 | 5mm allen key              |
-| 3mm allen key              |
+| 2.5mm allen key            |
+| 1.5mm allen key            |
 | Philips #2 screwdriver     |
+
 
 ## Time Commitment
 
-Due to the variances in how to build the project, I will outline a couple different options here:
+The time required to complete this project is approximately: _______ hours
 
-Build with pre made PCB – 
+It is best to approach this project with mild/moderate experience in electronics and circuits, tools and assembly, and computers. However, my aim is to make this guide thorough enough for people of all experience levels.
 
-Build with soldering PCB – 
-
-Skill level/difficulty/prior experience
-
-## Mechanical Assembly
-
-How to asseble PCB, how to assemble Pi
 
 ## PCB/Soldering
 
@@ -165,17 +161,26 @@ Place the 4 pin header onto the Vcc, Gnd, SDA, and SCL pins of the ADS1115. Plac
 
 Place the 9 pin header onto your Raspberry Pi so it sits on pins 1, 3, 5, 7, 9, 11, 13, 15, and 17. Now place the entire PCB onto the 9 pin header from the bottom (the pins should stick out the top of the PCB). Prop up the PCB so it is parallel and square with the Raspberry Pi. Solder the two outermost pins from the top side of the board (this is done to secure it). Now remove the PCB from the Pi with the 9 pin header attached. Finish soldering the other 7 pins from the top side of the board.
 
+
+## Mechanical Assembly
+
+How to asseble PCB, how to assemble Pi
+
+
 ## Power Up
 
 Power up/test
 
+
 ## Unit Testing
 
-How to test sensor/code
+How
+
 
 ## Production Testing
 
 How to test in production? Every unit, every 10th, random, etc
+
 
 ## Reproducible
 
