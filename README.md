@@ -72,7 +72,7 @@ These instructions cover the hardware aspect specifically soil moisture, while t
 | 3D printing           | [3D file](https://github.com/DBoo92/317Hardware/blob/master/mechanical/ProjectBoxMiddleRPI.stl)   | $15.00 |
 | Acrylic laser cutting | [Acrylic Top](https://github.com/DBoo92/317Hardware/blob/master/mechanical/CaseTop.cdr) <br>                                             [Acrylic Bottom](https://github.com/DBoo92/317Hardware/blob/master/mechanical/CaseBottom.cdr)     | $10.00 |
 
->Tip: If you haven't already ordered/received the custom parts above, please find a PCB manufacturer, 3D print shop, and a laser cutting shop. Use the source files above and have these parts made before beginning your project.
+> Tip: If you haven't already ordered/received the custom parts above, please find a PCB manufacturer, 3D print shop, and a laser cutting shop. Use the source files above and have these parts made before beginning your project.
 
 ### Tools List:
 
@@ -101,7 +101,7 @@ It is best to approach this project with mild/moderate experience in electronics
 
 Follow the steps below to assemble/solder your PCB.
 
->Hint: If you do not have prior soldering experience, I recommended reading [this](https://www.makerspaces.com/how-to-solder/) website and watching their demonstration video.
+> Hint: If you do not have prior soldering experience, I recommended reading [this](https://www.makerspaces.com/how-to-solder/) website and watching their demonstration video.
 
 Before beginning please ensure you have an adequate workspace, the appropriate tools, and that everything is clean and tidy. The appropriate safety equipment is outlined in the website above.
 
@@ -184,7 +184,43 @@ Cut two pieces of 22 AWG solid wire approximately 8" long and strip 1/4" off eac
 
 ## Mechanical Assembly
 
-How to asseble PCB, how to assemble Pi
+![ADSrisers](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/adsrisers.jpg)
+
+Start by inserting a 10mm riser in each mounting hole of the ADS1115 with a 3mm washer underneath it (as shown in the picture). Fasten them by threading a nut on the end of the riser and tightening it. Then from the bottom side of the PCB thread a screw into the riser through the 2 mounting holes and tighten them. Careful not to overtighten anything as the risers are only plastic.
+
+![PCBrisers](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/pcbrisers.JPG)
+
+Next insert a 10mm riser into each outer mounting hole on the PCB with a 3mm washer underneath it (as shown in the picture). Fastern them by threading aa nut onto the end of the riser and tightening it. Careful not to overtighten as the risers are only plastic.
+
+Now that the ADC is mounted to the PCB and the PCB has its own risers; you are ready to install it onto the Raspberry Pi. Place the PCB onto the Raspberry Pi by lining up the 9 pin header with pins 1, 3, 5, 7, 9, 11, 13, 15, and 17. Press straight down gently on the header to fully seat the PCB onto the Pi.
+
+![acrylicthreads](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/acrylicthreads.JPG)
+
+Before mounting anything to the bottom layer of acrylic, use the M5 x 0.8 tap + handle to tap/thread these 4 holes (outlined in red). 
+
+> Hint: If you haven't used a tap before, follow the instructions on [this](https://disher.com/2016/11/08/whats-tap-hand-taps-beginners/) website.
+
+![Piscrews](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/piscrews.JPG) ![Piwashers](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/piwashers.JPG) ![Pinuts](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/pinuts.JPG)
+
+Place a M2.5 x 10mm screw through each of the Pi mounting holes in the acrylic (first image circled in red). Place the acrylic bottom down with the bolt heads against the table (this will hold them in place). Place three 3mm washers onto each bolt on top of the acrylic (similar to the second image). Then line up the Pi over the bolts and lower it on to them (audio/video ports should face outside edge). Thread a nut onto the two bolts closest to the ethernet/USB ports and tighten them (third image). Carefully prop the unit up on its side, ensuring the outer 2 mounting bolts stay in their holes (as they are threaded in yet). Use the 1.5mm allen key to tighten up the outer 2 mounting bolts from underneath the acrylic (don't overtighten as they are threading into the plastic risers).
+
+![motorscrews](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/motorscrews.JPG) ![motornuts](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/motornuts.JPG)
+
+Install the included rubber mounts onto the motor body. Place the motor onto the acrylic base. Insert a M3 x 0.5 x 16mm screw with a 3mm washer into each mounting hole (as circled in red). Then thread a nut onto the bottom of each screw from underneath. Hold the nut with you fingers while using the 2.5mm allen key to tighten them. The motor mounts are only rubber so do not overtighten/compress the rubber.
+
+![fanscrews](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/fanscrews.JPG)
+
+Line up the fan with the acrylic top cover with the "cage" part of the fan facing down (this will ensure air is pulled in). Then use the Philips #2 screwdriver thread the fan screws into the fan. Snug the screws down but do not overtighten as the acrylic will crack.
+
+![caselayers](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/caselayers.jpg) ![PCBnotch](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/pcbnotch.JPG) ![casebolts](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/casebolts.jpg)
+
+Assemble the case by fitting the 3D printed middle section (first image blue arrow) onto the acrylic base. Then plug the fan connector into the 5v and Ground on the Pi header where the notch was cut earlier (second image). Now place the acrylic top on top of th 3D printed middle section (first image red arrow). Finally, insert the four M5 x 0.8 x 40mm bolts through all three layers and begin threading into the bottom layer (third image in red). Tighten these bolts with the 4mm allen key (careful not to overtighten).
+
+![connectors](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/connectors.JPG)
+
+Now that the case is complete we can add the sensor and effector. Plug the 3 pin soil sensor into the center connector on the PCB (circled in red). Then plug the motor connector into the remaining connector on the PCB (circled in blue).
+
+We are now ready to test and then power up.
 
 
 ## Power Up
