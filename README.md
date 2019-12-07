@@ -187,7 +187,7 @@ Using the wire strippers crimp a molex pin on the open end of each motor wire (s
 
 ### Sensor soldering
 
-![sensorwires](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/sensorpins.jpg) ![sensormolex](ttps://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/molex3pin.jpg)
+![sensorwires](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/sensorpins.jpg) ![sensormolex](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/molex3pin.jpg)
 
 Cut the stock connector off the soil sensor using the diagonal cutters. Make your cut close to the existing connector so the wires stay long. Strip about 1/4" off the end of each wire. Crimp a molex pin on the open end of each wire (shown in first image) using the wire strippers. Apply a small amount of solder to the crimp connection to strengthen it. Once the solder has cooled, insert the Vcc pin into hole 1, Aout pin into hole 2, and Gnd pin into hole 3 (as labelled in the second picture).
 
