@@ -50,12 +50,12 @@ These instructions cover the hardware aspect specifically soil moisture, while t
 | 20 pin GPIO header (single row)       |               | Electronics store                      | 1      | $0.50            |
 | 3 pin Molex connectors (female)       | 37-603-5      | Mode Electronics (Sayal Electronics)   | 2      | $1.00            |
 | 3 pin Molex header (male)             | 37-6203-5     | Mode Electronics (Sayal Electronics)   | 2      | $1.00            |
-| 22 AWG solid wire                     |               | Electronics store                      | 1 foot | $0.50            |
-| 1/8" heatshrink                       |               | Electronics store                      | 1 foot | $0.40            |
+| 22 AWG solid wire                     |               | Electronics store                      | 1 ft   | $0.50            |
+| 1/8" heatshrink                       |               | Electronics store                      | 1 ft   | $0.40            |
 | 63/37 solder (small roll)             | 4880-18G      | MG Chemicals (Sayal Electronics)       | 18g    | $3.95            |
 | Cone spray nozzle (3/8" thread)       | SG-4200TIP-CSK| Valley Industries (Princess Auto)      | 1      | $6.49            |
 | 1/4" barbed to 3/8" NPT fitting       | 903-41161001  | Sioux Chief (Home Depot)               | 1      | $3.25            |
-| Clear vinyl tube 1/4" ID              |               | Hardware store                         | 4 feet | $2.00            |
+| Clear vinyl tube 1/4" ID              |               | Hardware store                         | 4 ft   | $2.00            |
 | M5 x 0.8 x 40mm socket head screw     |               | Bolts Plus                             | 4      | $2.80            |
 | M3 x 0.5 x 16mm socket head screw     |               | Bolts Plus                             | 4      | $1.60            |
 | M2.5 x 0.45 x 10mm button head screw  |               | Bolts Plus                             | 4      | $1.20            |
@@ -189,16 +189,20 @@ Using the wire strippers crimp a molex pin on the open end of each motor wire (s
 
 ![sensorwires](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/sensorpins.jpg) ![sensormolex](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/molex3pin.jpg)
 
-Cut the stock connector off the soil sensor using the diagonal cutters. Make your cut close to the existing connector so the wires stay long. Strip about 1/4" off the end of each wire. Crimp a molex pin on the open end of each wire (shown in first image) using the wire strippers. Apply a small amount of solder to the crimp connection to strengthen it. Once the solder has cooled, insert the Vcc pin into hole 1, Aout pin into hole 2, and Gnd pin into hole 3 (as labelled in the second picture).
+Cut the stock connector off the soil sensor using the diagonal cutters. Make your cut close to the existing connector so the wires stay long. Strip about 1/4" off the end of each wire. Crimp a molex pin on the open end of each wire (shown in first image) using the wire strippers. Apply a small amount of solder to the crimp connection to strengthen it. Once the solder has cooled, insert the Aout pin into hole 1, Vcc pin into hole 2, and Gnd pin into hole 3 (as labelled in the second picture).
 
 > Make sure the pins go into the appropriate connector hole otherwise you could damage the sensor/circuit.
 
 
 ## Mechanical Assembly
 
+### ADS1115 risers
+
 ![ADSrisers](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/adsrisers.jpg)
 
 Start by inserting a 10mm riser in each mounting hole of the ADS1115 with a 3mm washer underneath it (as shown in the picture). Fasten them by threading a nut on the end of the riser and tightening it. Then from the bottom side of the PCB thread a screw into the riser through the 2 mounting holes and tighten them. Careful not to overtighten anything as the risers are only plastic.
+
+### PCB risers
 
 ![PCBrisers](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/pcbrisers.JPG)
 
@@ -206,31 +210,57 @@ Next insert a 10mm riser into each outer mounting hole on the PCB with a 3mm was
 
 Now that the ADC is mounted to the PCB and the PCB has its own risers; you are ready to install it onto the Raspberry Pi. Place the PCB onto the Raspberry Pi by lining up the 9 pin header with pins 1, 3, 5, 7, 9, 11, 13, 15, and 17. Press straight down gently on the header to fully seat the PCB onto the Pi.
 
+### Thread acrylic
+
 ![acrylicthreads](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/acrylicthreads.JPG)
 
 Before mounting anything to the bottom layer of acrylic, use the M5 x 0.8 tap + handle to tap/thread these 4 holes (outlined in red). 
 
 > Hint: If you haven't used a tap before, follow the instructions on [this](https://disher.com/2016/11/08/whats-tap-hand-taps-beginners/) website.
 
+### Mount Pi
+
 ![Piscrews](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/piscrews.JPG) ![Piwashers](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/piwashers.JPG) ![Pinuts](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/pinuts.JPG)
 
 Place a M2.5 x 10mm screw through each of the Pi mounting holes in the acrylic (first image circled in red). Place the acrylic bottom down with the bolt heads against the table (this will hold them in place). Place three 3mm washers onto each bolt on top of the acrylic (similar to the second image). Then line up the Pi over the bolts and lower it on to them (audio/video ports should face outside edge). Thread a nut onto the two bolts closest to the ethernet/USB ports and tighten them (third image). Carefully prop the unit up on its side, ensuring the outer 2 mounting bolts stay in their holes (as they are threaded in yet). Use the 1.5mm allen key to tighten up the outer 2 mounting bolts from underneath the acrylic (don't overtighten as they are threading into the plastic risers).
+
+### Mount motor
 
 ![motorscrews](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/motorscrews.JPG) ![motornuts](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/motornuts.JPG)
 
 Install the included rubber mounts onto the motor body. Place the motor onto the acrylic base. Insert a M3 x 0.5 x 16mm screw with a 3mm washer into each mounting hole (as circled in red). Then thread a nut onto the bottom of each screw from underneath. Hold the nut with you fingers while using the 2.5mm allen key to tighten them. The motor mounts are only rubber so do not overtighten/compress the rubber.
 
+### Install case fan
+
 ![fanscrews](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/fanscrews.JPG)
 
 Line up the fan with the acrylic top cover with the "cage" part of the fan facing down (this will ensure air is pulled in). Then use the Philips #2 screwdriver thread the fan screws into the fan. Snug the screws down but do not overtighten as the acrylic will crack.
+
+### Assemble case
 
 ![caselayers](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/caselayers.jpg) ![PCBnotch](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/pcbnotch.JPG) ![casebolts](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/casebolts.jpg)
 
 Assemble the case by fitting the 3D printed middle section (first image blue arrow) onto the acrylic base. Then plug the fan connector into the 5v and Ground on the Pi header where the notch was cut earlier (second image). Now place the acrylic top on top of th 3D printed middle section (first image red arrow). Finally, insert the four M5 x 0.8 x 40mm bolts through all three layers and begin threading into the bottom layer (third image in red). Tighten these bolts with the 4mm allen key (careful not to overtighten).
 
+### Plug in connectors
+
 ![connectors](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/connectors.JPG)
 
 Now that the case is complete we can add the sensor and effector. Plug the 3 pin soil sensor into the center connector on the PCB (circled in red). Then plug the motor connector into the remaining connector on the PCB (circled in blue).
+
+### Water lines
+
+![waterlines](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/waterlines.jpg)
+
+Using the diagonal cutters, cut the clear vinyl tubing into 2 equal length pieces (around 2 ft each). Push the end of a tube onto each water pump barb as shown in the image above.
+
+### Spray nozzle
+
+![waternozzle](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/waternozzle.jpg)
+
+Thread the 1/4" barb to 3/8" NPT fitting into the spray nozzle threads. Tighten these together firmly to prevent leaks. See above image for reference.
+
+Look on the face of the water pump (where the tubes connect) and find out which tube is labelled "IN" and which is "OUT". Then push the barbed end of the nozzle into the end of the "OUT" tube (as shown in the image above).
 
 We are now ready to test and then power up.
 
