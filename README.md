@@ -29,36 +29,35 @@ These instructions cover the hardware aspect specifically soil moisture, while t
 
 Parts Needed:
 
-| Part/Material                         | Part Number   | Supplier                       | Qty    | Approx. Cost     |
-|---------------------------------------|---------------|--------------------------------|:------:|-----------------:|
-| Raspberry Pi 4 starter kit            | CAN123        | CanaKit (Amazon)               | 1      | $134.9           |
-| Capacitive Soil Moisture sensor       | EK1940        | Gikfun (Amazon)                | 1      | $16.50           |
-| Mini Diaphragm Pump                   | EK1856C       | Gikfun (Amazon)                | 1      | $12.45           |
-| ADS1115 (or ADS1015)                  | 4260474032037 | Universal Solder (Amazon)      | 1      | $7.89            |
-| 1K resistor                           |               |                                | 3      | $0.00            |
-| PN2222A transistor                    |               |                                | 1      | $0.00            |
-| IN4001 diode                          |               |                                | 1      | $0.00            |
-| SP3T switch                           |               | Sayal Electronics              | 1      | $0.00            |
-| 2.5mm DC jack                         |               | Sayal Electronics              | 1      | $0.00            |
-| 6v - 12v power supply (2.5mm plug)    |               |                                | 1      | $0.00            |
-| 60mm case fan (with screws)           |               |                                | 1      | $0.00            |
-| 9 pin GPIO header (single row)        |               |                                | 1      | $0.00            |
-| 4 pin GPIO header (single row)        |               |                                | 1      | $0.00            |
-| 2 pin GPIO header (single row)        |               |                                | 1      | $0.00            |
-| 3 pin Molex connectors (male + female)|               | Sayal Electronics              | 2      | $0.00            |
-| 22 AWG wire                           |               |                                | 1 foot | $0.00            |
-| 4mm heatshrink                        |               |                                | 1 foot | $0.00            |
-| 60/40 solder (small roll)             |               |                                | 1      | $0.00            |
-| Cone spray nozzle (3/8" thread)       |               | Princess Auto                  | 1      | $0.00            |
-| 1/4" barbed to 3/8" NPT fitting       |               | Home Depot                     | 1      | $0.00            |
-| Clear PVC tube 1/4" ID                |               |                                | 4 feet | $0.00            |
-| M5 x 0.8 x 40mm socket head screw     |               | Bolts Plus                     | 4      | $0.00            |
-| M3 x 0.5 x 16mm socket head screw     |               | Bolts Plus                     | 4      | $0.00            |
-| M2.5 x 0.45 x 10mm button head screw  |               | Bolts Plus                     | 4      | $0.00            |
-| M3 x 0.5 nuts                         |               | Bolts Plus                     | 4      | $0.00            |
-| M3 washers                            |               | Bolts Plus                     | 4      | $0.00            |
-| 10mm plastic risers (with nuts)       |               |                                | 4      | $0.00            |
-| 12" x 12" x 3mm acrylic               |               |                                | 1      | #10.00           |
+| Part/Material                         | Part Number   | Supplier                               | Qty    | Approx. Cost     |
+|---------------------------------------|---------------|----------------------------------------|:------:|-----------------:|
+| Raspberry Pi 4 starter kit            | CAN123        | CanaKit (Amazon)                       | 1      | $134.99          |
+| Capacitive Soil Moisture sensor       | EK1940        | Gikfun (Amazon)                        | 1      | $8.48            |
+| Mini Diaphragm Pump                   | EK1856C       | Gikfun (Amazon)                        | 1      | $11.67           |
+| ADS1115 (or ADS1015)                  | 4260474032037 | Universal Solder (Amazon)              | 1      | $7.89            |
+| 1K resistor                           |               | Electronics store                      | 3      | $0.30            |
+| PN2222A transistor                    |               | Electronics store                      | 1      | $0.25            |
+| IN4001 diode                          |               | Electronics store                      | 1      | $0.15            |
+| 1P3T switch                           | SMC-549-1     | Sayal Electronics                      | 1      | $2.50            |
+| 2.1mm DC power jack                   | GAK-1973E-2   | Sayal Electronics                      | 1      | $1.50            |
+| 6v - 12v power supply (2.1mm plug)    |               | Electronics store                      | 1      | $9.95            |
+| 50mm case fan (with screws)           |               | Electronics/computer store             | 1      | $3.50            |
+| 20 pin GPIO header (single row)       |               | Electronics store                      | 1      | $0.50            |
+| 3 pin Molex connectors (female)       | 37-603-5      | Mode Electronics (Sayal Electronics)   | 2      | $1.00            |
+| 3 pin Molex header (male)             | 37-6203-5     | Mode Electronics (Sayal Electronics)   | 2      | $1.00            |
+| 22 AWG solid wire                     |               | Electronics store                      | 1 foot | $0.50            |
+| 1/8" heatshrink                       |               | Electronics store                      | 1 foot | $0.40            |
+| 63/37 solder (small roll)             | 4880-18G      | MG Chemicals (Sayal Electronics)       | 18g    | $3.95            |
+| Cone spray nozzle (3/8" thread)       | 8418832       | Valley Industries (Princess Auto)      | 1      | $6.49            |
+| 1/4" barbed to 3/8" NPT fitting       | 903-41161001  | Sioux Chief (Home Depot)               | 1      | $3.25            |
+| Clear vinyl tube 1/4" ID              |               | Hardware store                         | 4 feet | $2.00            |
+| M5 x 0.8 x 40mm socket head screw     |               | Bolts Plus                             | 4      | $2.80            |
+| M3 x 0.5 x 16mm socket head screw     |               | Bolts Plus                             | 4      | $1.60            |
+| M2.5 x 0.45 x 10mm button head screw  |               | Bolts Plus                             | 4      | $1.20            |
+| M3 x 0.5 nuts                         |               | Bolts Plus                             | 4      | $0.40            |
+| M3 washers                            |               | Bolts Plus                             | 8      | $0.40            |
+| 10mm PCB risers (with nuts)           |               | Hardware store                         | 4      | $0.80            |
+| 12" x 12" x 1/8" acrylic              |               | Hardware store                         | 1      | $10.00           |
 
 Custom Parts (to be made):
 
