@@ -29,8 +29,11 @@
   * [Import libraries](#import-libraries)
 - [Unit Testing](#unit-testing)
   * [Sensor test](#sensor-test)
-  * [Full test](#full-test)
+  * [Water switch test](#water-switch-test)
+  * [Motor test](#motor-test)
+  * [Full system test](#full-system-test)
 - [Production Testing](#production-testing)
+- [Conclusion](#conclusion)
 
 
 ## Introduction
@@ -44,6 +47,8 @@ The system consists of a Raspberry Pi which takes readings from various sensors 
 The BME 680 and PT100 sensors are being covered by my group members, Ryan and Aiden respectively.The app is covered in a different course, CENG 319 - [GreenSense App](https://github.com/Aidenbolos/Green-Sense). These build instructions will focus solely on the capacitive soil moisture platform (seen in the system diagram above and the diagram below).
 
 ![soilmoisture](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/intro/caseabove.jpg)
+
+This project features a capacitive soil moisture sensor for monitoring soil conditions, a pump/irrigation system for watering the plant/soil, and a watering level switch for selecting the amount of water to be dispersed to the plant. 
 
 
 ## Bill of Materials
@@ -83,7 +88,7 @@ The BME 680 and PT100 sensors are being covered by my group members, Ryan and Ai
 
 ### Custom Parts:
 
-| Part                  | Source file                                                                                       | Cost   |
+| Part                  | Source file                                                                                       | Approx. Cost   |
 |-----------------------|---------------------------------------------------------------------------------------------------|-------:|
 | PCB manufacturing     | [PCB file](https://github.com/DBoo92/317Hardware/blob/master/electronics/SoilMoisture_Gerber.zip)| $20.00 |
 | 3D printing           | [3D file](https://github.com/DBoo92/317Hardware/blob/master/mechanical/ProjectBoxMiddleRPI.stl)   | $15.00 |
@@ -292,7 +297,7 @@ You are now ready to power up.
 
 ## Power Up
 
-> Tip: If you haven't already, please complete the 2 tests listed on the bottom of the PCB soldering section. These will help ensure that no damage is done to your Pi during initial power up.
+> Tip 6: If you haven't already, please complete the 2 tests listed at the bottom of the PCB soldering section. These will help ensure that no damage is done to your Pi during initial power up.
 
 ### Load OS
 
@@ -336,11 +341,11 @@ You now have the necessary libraries and some sample code to work with.
 
 ## Unit Testing
 
-I suggest testing the sensor and watering level switch first without the motor functionality. This way it is easier to troubleshoot if something does go wrong.
+I suggest testing the sensor and watering level switch first without the motor functionality. This way it is easier to troubleshoot if you run into problems.
 
 ### Sensor test
 
-Now that everything is assembled and software installed you are ready to test the sensor. The sensor should be connected to the PCB at this point and you should have a glass of water nearby to simulate soil moisture.
+Now that everything is assembled and the software is installed you are ready to test the sensor. The sensor should be connected to the PCB at this point and you should have a glass of water nearby to simulate soil moisture.
 
 Power up your Pi and open a terminal session. Enter the following command to navigate to the Adafruit example code you downloaded earlier:
 
@@ -354,24 +359,34 @@ Now that you are in the examples folder, run this command:
 nano simpletest.py
 ```
 
-The program should start up in the terminal. You will see the readings ofthe 4 ADC channels displayed in a table. See the picture below as an example:
+> Tip 7: Use CTRL-c to stop the program when you are done.
 
-![readings](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/intro/readings.jpg)
+The program should start up in the terminal. You will see the readings of the 4 ADS1115 channels displayed in a table. See the picture below as an example:
 
-The soil sensor values are shown in the first column. In dry air the sensor should read around the 24,000. Test the senor by placing it into the glass of water. You should see these readings drop down below 15,000.
+![readings](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/intro/readings.jpg Fig 7.1: Test readings")
 
-The watering level switch values are shown in the second column. Test the switch by flipping it between its 3 positions. You should see the readings change between low (under 1000), medium (around 15000), and high (over 24000).
+The soil sensor values are shown in the first column. In dry air the sensor should read around 24,000. Test the senor by placing it into the glass of water. You should see these readings drop down below 15,000. Repeat this a few times to ensure things are working well.
 
-Once you have confirmed that these two are working correctly you can now move on to the full test.
+### Water switch test
+
+The watering level switch values are shown in the second column. Test the switch by flipping it between its 3 positions. You should see the readings change between low (under 1000), medium (around 15000), and high (over 24000). Again, repeat this a few times for verification. You may stop the program now.
+
+Once you have confirmed that these two are working correctly you may now test the motor.
+
+### Motor test
+
+The motor should be connected to the PCB and the water hoses connected to the motor. Plug the 6 - 12v power supply into the wall and plug the 2.1mm plug into the DC jack on the PCB. Place the "IN" hose into a cup of water and the "OUT" hose into an empty cup. Unscrew and remove the top cover from the project case and disconnect the fan for now. Using a wire with alligator clips on either end, clip one end to the Pi 5v output (where the fan was connected). Clip the other end onto the middle leg (Base) of the transistor (careful not to touch the other legs). The motor/pump should now turn on. Check to make sure the pump is working correctly and you are getting a steady mist/stream out of the spray nozzle. Once you are done - remove the alligator clips, replace the fan connector, and reinstall the top cover.
+
+If all three components are working correctly you are ready to proceed to the full system test.
 
 
-### Full test
+### Full system test
 
-Now you are ready to test the complete system. Ensure that the sensor and motor are connected to the PCB, and the water hoses are connected to the motor. We will also plug the 6 - 12v power supply into the wall and insert the 2.1mm plug into the DC jack on the PCB. Go outside and fill a pot/cup with soil. Place the soil sensor into the soil (not below the warning line), point the sprayer nozzle toward the soil (but away from the sensor), and put the "IN" hose in a bottle of water.
+Now you are ready to test the complete system. Ensure that the sensor and motor are connected to the PCB, and the water hoses are connected to the motor. Plug the 6 - 12v power supply into the wall and insert the 2.1mm plug into the DC jack on the PCB. Go outside and fill a pot/cup with soil. Place the soil sensor into the soil (not past the warning line), point the sprayer nozzle toward the soil (but away from the sensor), and put the "IN" hose in a bottle of water.
 
-Open the Pi's web browser and download the modified program from here - [readingsupdated.py](https://github.com/DBoo92/317Hardware/blob/master/software/readingsupdated.py). Make sure you place it into the downloads folder.
+Open the Pi's web browser and download the modified program from here - [readingsupdated.py](https://github.com/DBoo92/317Hardware/blob/master/software/readingsupdated.py). Make sure you save it into the downloads folder.
 
-Open a terminal session. Then move the program file to the Adafruit examples folder (for the convenience of keeping your code in the same folder). Use this command:
+Open a terminal session. Then move the downloaded file to the Adafruit examples folder (for the convenience of keeping your code in the same folder) using this command:
 
 ```sh
 cp ~/Downloads/readingsupdated.py ~/Adafruit_Python_ADS1x15/examples
@@ -389,17 +404,46 @@ And use this command to run the new program:
 nano readingsupdated.py
 ```
 
-Remember that the sensor is in the (hopefully) moist soil, so the water should not turn on. You can wait for the moisture levels to drop to turn the pump on (which will take a long time). Or you can test the pump by simply removing the sensor from the soil. This will expose the sensor to dry air, which should then trigger the pump to turn on. See the video below for an example:
+Remember that the sensor is in the (hopefully) moist soil, so the water should not turn on. If the water does turn on initially, it just means the soil readings are dry. If the water doesn't turn on, you may wait for the moisture levels to drop to turn the pump on (which will take a while). Or you can test the pump by simply removing the sensor from the soil. This will expose the sensor to dry air, which should then trigger the pump to turn on. See the video below for an example:
 
 Fully functioning system:
 [![ReadingsVideo](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pi%20%26%20readings/vidscreenshot.png)](https://youtu.be/7LPlyvlskEI "CENG 317 soil readings")
 
 Also, test out the different positions on the watering level switch. The different positions should change how long the pump stays on for. This directly affects how much water the plant gets.
 
+Test these variations out a few times to ensure everything is working. You can even leave it running for a few hours and monitor it. As long as both channels are reading fine and the water system turns on when the threshold is crossed, all is well. 
+
 **If you've ran all these tests and everything is working as described - then congratulations! You have succesfully completed the soil moisture sensor project!**
 
 
 ## Production Testing
 
-How to test in production? Every unit, every 10th, random, etc
+There are a couple steps to my production testing methods.
+
+1. Bench test jig - run on every PCB
+
+This consists of a test jig to test the PCB for resistance. The PCB gets plugged into a jig which has a built in jumper between the Vcc and Gnd on the soil sensor circuit. A soil sensor (taken from the line) and plugged into its header on the PCB. Then using a DMM on the test bench, check resistance between Gnd and A0. This value should read between a few hundred thousand ohms to a few million ohms on success.
+
+The jig would also feature a 12v 2.1mm plug to insert into the DC jack. The jig will apply voltage to the transistor "Base" header pin to turn it on. Using the DMM, voltage would be checked across the motor header pins on the PCB. This value would read approx. 12v on success. We use a 12v power supply to see if the motor/circuit can withstand its rated voltage.
+
+This process would end with a visual check of all components on the PCB, all solder joints, and the soil sensor. If it passes these tests, the soil sensor and the PCB are kept as a pair and returned to production for packaging. If not, we would try another soil sensor to see if the problem was the sensor or the PCB. If it still fails, then they are used to investigate where the failure occured and why.
+
+This gives us good quality control and eliminates a lot of issues from getting out the door.
+
+Once this bench test returns a reasonable success rate, we could cut back to testing every 5th PCB on the line.
+
+2. Full test jig - every 20th PCB
+
+This consists of a complete test jig - Raspberry Pi with pre-installed OS and needed programs, water lines + sprayer, and 12v power supply with 2.1mm plug. We would install the PCB onto the Pi, then we would take an ADS1115, soil sensor, and motor from the production line and connect them. Then all other peripherals would be connected (but no fastening things together). The full readingsupdated.py program would be run to see if the system functions as it should (as outlined in "Full system test" above). We use a 12v power supply to see if the motor/circuit can withstand its rated voltage. We would test the extremes of dry air vs. moisture to see the sensor's range.
+
+This process would end with a visual check of all components on the PCB, all solder joints, the ADS1115, the soil sensor, and the motor. If it passes these tests, the soil sensor, motor, ADS1115, and the PCB are kept as a unit and returned to production for packaging. If not, we would try to narrow down the problem to the PCB, ADS1115, soil sensor, or the motor by switching them out for others. If it still fails, then they are used for futher investigation into where the failure occured and why.
+
+This enables us to test the entire system and ensure that all features are functioning consistently. However this process is somewhat labour intense, which is why it is only done to every 20th unit.
+
+This gives us fairly good quality control, while also balancing cost and not testing units so frequently.
+
+
+## Conclusion
+
+Thank you for taking the time to read and review my project. I hope it was informative and helpful for you. Please feel free to try it out yourself.
 
