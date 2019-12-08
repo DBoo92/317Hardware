@@ -35,13 +35,13 @@
 
 ## Introduction
 
-Welcome to my CENG 317 hardware project page. This guide will provide you with instructions on how to build a capacitive soil moisture sensor using a Broadcom development platform. Here is a picture of the proposed systemm:
+Welcome to my CENG 317 hardware project page. The aim of this project is to create a system for monitoring greenhouse conditions using a Broadcom development platform and various sensors/effectors. Here is a diagram of the proposed systemm:
 
 ![Systemdiagram](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/intro/systemdia.png)
 
-The system will consist of the Raspberry Pi which takes readings from various sensors and places them into a Firebase database via WiFi. If these readings are outside of certain ranges/thresholds the platform will send a signal out to a certain effector to adjust the environment/conditions. All of this data will be viewable from within our app which will connect to the database via WiFi. The app will also be able to control/turn on the various effectors through Bluetooth.
+The system consists of a Raspberry Pi which takes readings from various sensors and places them into a Firebase database via WiFi. If these readings are outside of certain ranges/thresholds the device will activate a certain effector to adjust the environment/conditions. All of this data will be viewable from within our app which will connect to the database via WiFi. The app will also be able to control/turn on the various effectors through Bluetooth.
 
-The BME 680 and PT100 sensors are being covered by my group members, and the software/app is covered in a different course CENG 319 - [GreenSense App](https://github.com/Aidenbolos/Green-Sense). These build instructions will focus solely on the capacitive soil moisture platform (seen in the system diagram above and the diagram below).
+The BME 680 and PT100 sensors are being covered by my group members, Ryan and Aiden respectively.The app is covered in a different course, CENG 319 - [GreenSense App](https://github.com/Aidenbolos/Green-Sense). These build instructions will focus solely on the capacitive soil moisture platform (seen in the system diagram above and the diagram below).
 
 ![soilmoisture](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/intro/caseabove.jpg)
 
@@ -76,8 +76,9 @@ The BME 680 and PT100 sensors are being covered by my group members, and the sof
 | M3 x 0.5 x 16mm socket head screw     |               | Bolts Plus                             | 4      | $1.60            |
 | M2.5 x 0.45 x 10mm button head screw  |               | Bolts Plus                             | 4      | $1.20            |
 | M3 x 0.5 nuts                         |               | Bolts Plus                             | 4      | $0.40            |
+| M2.5 x 0.45 nuts                      |               | Bolts Plus                             | 2      | $0.10            |
 | M3 washers                            |               | Bolts Plus                             | 20     | $1.00            |
-| 10mm PCB risers (with nuts)           |               | Hardware store                         | 4      | $0.80            |
+| 10mm PCB risers (with nuts/screws)    |               | Hardware store                         | 4      | $0.80            |
 | 12" x 12" x 1/8" acrylic              |               | Hardware store                         | 1      | $10.00           |
 
 ### Custom Parts:
@@ -88,7 +89,7 @@ The BME 680 and PT100 sensors are being covered by my group members, and the sof
 | 3D printing           | [3D file](https://github.com/DBoo92/317Hardware/blob/master/mechanical/ProjectBoxMiddleRPI.stl)   | $15.00 |
 | Acrylic laser cutting | [Acrylic Top](https://github.com/DBoo92/317Hardware/blob/master/mechanical/CaseTop.cdr) <br>                                             [Acrylic Bottom](https://github.com/DBoo92/317Hardware/blob/master/mechanical/CaseBottom.cdr)     | $10.00 |
 
-> Tip: If you haven't already ordered/received the custom parts above, please find a PCB manufacturer, 3D print shop, and a laser cutting shop. Use the source files above and have these parts made before beginning your project.
+> Tip 1: If you haven't already ordered/received the custom parts above, please find a PCB manufacturer, 3D print shop, and a laser cutting shop. Use the source files above and have these parts made before beginning your project.
 
 ### Tools List:
 
@@ -105,11 +106,12 @@ The BME 680 and PT100 sensors are being covered by my group members, and the sof
 | 2.5mm allen key            |
 | 1.5mm allen key            |
 | Philips #2 screwdriver     |
+| X-Acto knife               |
 
 
 ## Time Commitment
 
-The time required to complete this project is approximately: _______ hours
+Time required to complete this project is approximately: **15 - 18 hours** (continuous work), or 2 work days.
 
 It is best to approach this project with mild/moderate experience in electronics and circuits, tools and assembly, and computers. However, my aim is to make this guide thorough enough for people of all experience levels.
 
@@ -124,116 +126,118 @@ Before beginning please ensure you have an adequate workspace, the appropriate t
 
 ### ADS1115 soldering
 
-![ADSsolder](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/adcsolder.jpg)
+![ADSsolder](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/adcsolder.jpg "Fig 4.1: ADS1115 solder points")
 
-Place the 10 pin header through the ADS1115 with the short side of pins going through the holes. Solder each pin as circled in red above. Allow time to cool between each solder joint.
+Place the 10 pin header through the ADS1115 with the short side of pins going through the holes. Ensure that the pins are at a 90 degree angle with the circuit coard. Solder each pin as circled in red above. Allow time to cool between each solder joint.
 
 ### PCB soldering
 
 #### 1. Vias
 
-![PCBvias1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBvias1.jpg "Fig 5.1: Top vias solder points") ![PCBvias2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBvias2.JPG "Fig. 5.2: Bottom vias solder points")
+![PCBvias1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBvias1.jpg "Fig 4.2: Via solder points (top)") ![PCBvias2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBvias2.JPG "Fig. 4.3: Via solder points (bottom)")
 
-Begin by cutting 6 short lengths of your solid core wire and stripping them completely. Place a piece of wire through one of the holes circled in red and solder one side of it. Once the solder joint has cooled, flip the PCB over and solder the other side of the same wire. Carefully cut off the excess wire on either side down at the tip of the solder joint. Repeat this process for the other 5 holes circled in red.
+Begin by cutting six 2" lengths of your solid core wire and stripping them completely. Place a piece of wire through one of the holes circled in red and solder one side of it. Once the solder joint has cooled, flip the PCB over and solder the other side of the same wire. Using the diagonal cutters, carefully cut off the excess wire on either side down at the tip of the solder joint. Repeat this process for the other 5 holes circled in red.
 
-#### 2. DC Jack and SP3T Switch
+#### 2. DC Jack and 1P3T Switch
 
-![PCBjack1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBjack1.JPG "Fig 5.3: Top jack and switch") ![PCBjack2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBjack2.JPG "Fig 5.4: Bottom solder points")
+![PCBjack1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBjack1.JPG "Fig 4.4: Jack and switch placement") ![PCBjack2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBjack2.JPG "Fig 4.5: Jack and switch solder points")
 
-Place the DC jack (circled in blue) into its mounting holes on the PCB. Ensure that the jack is sitting on top of the board, facing out the side, and its pins/tabs stick out the bottom. Bend the 3 tabs down towards the PCB to help hold the jack in place and to allow for a better solder connection. Solder each tab individually on the bottom of the board. Allow time to cool in between each pin (to avoid melting the plastic).
+Place the DC jack (first image circled in blue) into its mounting holes on the PCB. Ensure that the jack is sitting on top of the board, facing out the side, and its pins/tabs stick out the bottom. Bend the 3 tabs down towards the PCB to help hold the jack in place and to allow for a better solder connection. Solder each tab individually on the bottom of the board (second image circled in clue). Allow time to cool in between each pin (to avoid melting the plastic).
 
-Place the SP3T switch (circled in red) into its mounting holes on the PCB. Ensure that the switch is sitting on top of the board, facing out the side, and its pins stick out the bottom. Bend the pins slightly to help hold the switch in place. Solder each pin individually on the bottom of the board (the second pin from the left will remain empty). After this is done solder just the far left hand pin from the top as well (this is the interior red circle on the first image). 
+Place the 1P3T switch (first image circled in red) into its mounting holes on the PCB. Ensure that the switch is sitting on top of the board, facing out the side, and its pins stick out the bottom. Bend the pins slightly to help hold the switch in place. Solder each pin individually on the bottom of the board (second image circled in red). After this is done solder just the far left hand pin from the top as well (first image interior red circle). One hole will remain empty as seen in the second image.
 
 #### 3. Resistors
 
-![PCBresist1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBresist1.JPG "Fig 5.5: Resistor holes") ![PCBresist2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBresist2.JPG "Fig 5.6: Top resistor solder points") ![PCBresist3](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBresist3.JPG "Fig 5.7: Bottom resistor solder points")
+![PCBresist1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBresist1.JPG "Fig 4.6: Resistor holes") ![PCBresist2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBresist2.JPG "Fig 4.7: Resistor solder points (top)") ![PCBresist3](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBresist3.JPG "Fig 4.8: Resistor solder points (bottom)")
 
-Bend the legs on your 1k ohm resistors so each resistor aligns with a pair of holes circled in red. Place the first resistor into its mounting holes from the top of the board and bend the legs from underneath to hold it in place. Solder both the top and bottom holes (allow time to cool between solder joints to prevent overheating the resistor). Do this for the other 2 resistors.
+Bend the legs on your 1k ohm resistors so each resistor aligns with a pair of holes (first image circled in red). Place the first resistor into its mounting holes from the top of the board and bend the legs from underneath to hold it in place. Solder both the top and bottom holes (second and third image circled in red). Allow time to cool between solder joints to prevent overheating the resistor. Do this for the other 2 resistors.
 
 #### 4. Diode
 
-![PCBdiode1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBdiode1.JPG "Fig 5.8: Diode holes") ![PCBdiode2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBdiode2.JPG "Fig 5.9: Bottom diode solder points")
+![PCBdiode1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBdiode1.JPG "Fig 4.9: Diode holes") ![PCBdiode2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBdiode2.JPG "Fig 4.10: Diode solder points (bottom)")
 
-Bend the legs on your diode so it aligns with the pair of holes circled in red. 
+Bend the legs on your diode so it aligns with its pair of holes (first image circled in red). 
 
->The silver line on your diode MUST face the square pad on the board (red arrow pointing to it).
+> Tip 2: The silver line on your diode MUST face the square pad on the board (red arrow pointing to it).
 
-Place the diode into its mounting holes from the top of the board and bend the legs from underneath to hold it in place. Solder the diode from underneath the board (allow time to cool between solder joints to prevent damaging the diode).
+Place the diode into its mounting holes from the top of the board and bend the legs from underneath to hold it in place. Solder the diode from underneath the board. Allow time to cool between solder joints to prevent damaging the diode.
 
 #### 5. Transistor
 
-![PCBtransist1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBtransist1.JPG "Fig 5.10: Transistor holes") ![PCBtransist2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBtransist2.JPG "Fig 5.11: Bottom transistor solder points")
+![PCBtransist1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBtransist1.JPG "Fig 4.11: Transistor holes") ![PCBtransist2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBtransist2.JPG "Fig 4.12: Transistor solder points (bottom)")
 
-Place the transistor into its mounting holes from the top of the board.
+Place the transistor into its mounting holes from the top of the board (first image circled in red).
 
->The flat side on the transistor body MUST face the flat red line in the diagram. However, if you are using a different transistor/different package please refer to its data sheet to determine its orientation (collector, base, and emitter labelled in the diagram).
+> Tip 3: The flat side on the transistor body MUST face the flat red line in the diagram. However, if you are using a different transistor/package please refer to its data sheet to determine its orientation (collector, base, and emitter are labelled in the diagram).
 
-Bend the pins on the transistor from underneath to help hold it in place. Solder the transistor pins from underneath the board. It is very important you allow time to cool between each solder joint as transistors are very sensistive to heat.
+Bend the pins on the transistor from underneath to help hold it in place. Solder the transistor pins from underneath the board (second image circled in red). It is very important you allow time to cool between each solder joint as transistors are very sensistive to heat.
 
 #### 6. Molex Connectors
 
-![PCBmolex1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBmolex1.JPG "Fig 5.12: Molex holes") ![PCBmolex2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBmolex2.JPG "Fig 5.13: Bottom molex solder points") ![PCBmolex3](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/molexpcb.jpg "Fig 5.14: Top molex orientation")
+![PCBmolex1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBmolex1.JPG "Fig 4.13: Molex holes") ![PCBmolex2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBmolex2.JPG "Fig 4.14: Molex solder points (bottom)") ![PCBmolex3](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/molexpcb.jpg "Fig 4.15: Unused molex pin")
 
-Place the sensor molex connector (circled in red) into its mounting holes from the top of the board.
+Place the soil sensor molex connector (circled in red) into its mounting holes from the top of the board.
 
->The plastic "tab" on the molex connector should face the flat red line in the diagram.
+> Tip 4: The plastic "tab" on the molex connector should face the flat red line in the diagram.
 
-Bend the pins from underneath to hold it in place. Solder each pin from underneath the board.
+Bend the pins from underneath to hold it in place. Solder each pin from underneath the board (second image circled in red).
 
-For the motor molex connector (first image circled in blue), cut off or bend flat the bottom of the pin as it will interfere with mounting (blue circle on the third image). Place the connector into its mounting holes from the top of the board (the direction the plastic tab faces isn't critical). Solder the two pins from underneath the board.
+For the motor molex connector, cut off or bend flat the bottom pin (blue circle on the third image) as it will interfere with mounting and is unused. Place the connector into its mounting holes from the top of the board (first image circled in blue). Solder the two pins from underneath the board (second image circled in blue).
 
 #### 7. ADC and Pi Headers
 
-![PCBheader1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBheader1.JPG "Fig 5.15: Header holes") ![PCBheader2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBheader2.JPG "Fig 5.16: Bottom solder points") ![PCBheader3](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBheader3.JPG "Fig 5.17: Top solder points")
+![PCBheader1](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBheader1.JPG "Fig 4.16: Header holes") ![PCBheader2](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBheader2.JPG "Fig 4.17: Header solder points (bottom)") ![PCBheader3](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/PCBheader3.JPG "Fig 4.18: Header solder points (top)")
 
-If you haven't already, now is the time to cut your headers to size. You will need one 2 pin, one 4 pin, and one 9 pin header.
+If you haven't already, now is the time to cut your headers to size. You will need one 2 pin, one 4 pin, and one 9 pin header. Carefully use the X-Acto knife to cut your headers to the desired size.
 
-Place the 4 pin header onto the Vcc, Gnd, SDA, and SCL pins of the ADS1115. Place the 2 pin header onto the A0 and A1 pins of the ADS1115. Place the headers into their mounting holes from the top of the PCB (circled in red) and ensure that the pins stick out the bottom. Flip the PCB over so it is now resting on the ADS1115. Prop up the PCB so it is parallel and square with the ADS1115. Solder the the header pins on the bottom side of the board.
+Push the 4 pin header onto the Vcc, Gnd, SDA, and SCL pins of the ADS1115. Push the 2 pin header onto the A0 and A1 pins of the ADS1115. Place the headers into their mounting holes from the top of the PCB (first image circled in red) and ensure that the pins stick out the bottom. Flip the PCB over so it is now resting on the ADS1115. Prop up the PCB so it is parallel and square with the ADS1115. Solder the the header pins on the bottom side of the board (second image circled in red).
 
-Place the 9 pin header onto your Raspberry Pi so it sits on pins 1, 3, 5, 7, 9, 11, 13, 15, and 17. Now place the entire PCB onto the 9 pin header from the bottom (the pins should stick out the top of the PCB). Prop up the PCB so it is parallel and square with the Raspberry Pi. Solder the two outermost pins from the top side of the board (this is done to secure it). Now remove the PCB from the Pi with the 9 pin header attached. Finish soldering the other 7 pins from the top side of the board.
+Push the 9 pin header onto your Raspberry Pi so it sits on pins 1, 3, 5, 7, 9, 11, 13, 15, and 17. Now place the entire PCB (bottom down) onto the 9 pin header (the pins should stick out the top of the PCB - first image circled in blue). Prop up the PCB so it is parallel and square with the Raspberry Pi. Solder the two outermost pins from the top side of the board (third image circled in blue). Now remove the PCB from the Pi with the 9 pin header attached. Finish soldering the other 7 pins from the top side of the board.
 
 > Test 1: It is recommended to do continuity tests on side-by-side solder joints or any connections that look close to each other/touching. This is a precaution to help ensure there are no shorts between solder joints.
 
-> Test 2: Use a jumper wire to connect Vcc and Gnd together from the PCB sensor circuit (use the jumper wire in the header). Then, using a DMM set to ohms, measure resistance between Gnd and A0 on your ADC. You should see a reading between a few hundred thousand ohms and a few million ohms. If you see this reading it indicates your sensor circuit is wired correctly.
+> Test 2: Use a jumper wire to connect Vcc and Gnd together on the PCB sensor circuit (connect the pins in the header). Then, using a DMM set to ohms, measure resistance between Gnd and A0 on your ADC. You should see a reading between a few hundred thousand ohms and a few million ohms. If you see this reading it indicates your sensor circuit is wired correctly.
 
 ### Motor soldering
 
-![motorsolder](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/motorpigtail.jpg)
+![motorsolder](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/motorpigtail.jpg "Fig 4.19: Motor terminal wires")
 
 Cut two pieces of 22 AWG solid wire approximately 8" long and strip 1/4" off each end. Wrap the end of one wire onto one of the motor terminals. Solder this connection. Cut off a 2" piece of heatshrink and slide it down the wire and over the connection. Use the heat gun to heat up the tubing and shrink it. Repeat this process for the second wire and the second motor terminal.
 
-![motorwires](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/motorpins.jpg) ![motormolex](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/molex3pin.jpg)
+![motorwires](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/motorpins.jpg "Fig 4.20: Motor wires molex pins") ![motormolex](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/molex3pin.jpg "Fig 4.21: Molex pin numbers")
 
-Using the wire strippers crimp a molex pin on the open end of each motor wire (shown in the first image). Apply a small amount of solder to the crimp connection to strengthen it. Once the solder has cooled, insert the pins into holes 1 and 2 as labelled in the second picture (doesn't matter which pin goes in which hole).
+Using the wire strippers crimp a molex pin onto the open end of each motor wire (shown in the first image). Apply a small amount of solder to the crimp connection to strengthen it. Once the solder has cooled, insert the pins into holes 1 and 2 as labelled in the second picture (doesn't matter which pin goes in which hole).
 
 ### Sensor soldering
 
-![sensorwires](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/sensorpins.jpg) ![sensormolex](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/molex3pin.jpg)
+![sensorwires](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/sensorpins.jpg "Fig 4.22: Soil sensor molex pins") ![sensormolex](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/molex3pin.jpg "Fig 4.23: Molex pin numbers")
 
 Cut the stock connector off the soil sensor using the diagonal cutters. Make your cut close to the existing connector so the wires stay long. Strip about 1/4" off the end of each wire. Crimp a molex pin on the open end of each wire (shown in first image) using the wire strippers. Apply a small amount of solder to the crimp connection to strengthen it. Once the solder has cooled, insert the Aout pin into hole 1, Vcc pin into hole 2, and Gnd pin into hole 3 (as labelled in the second picture).
 
-> Make sure the pins go into the appropriate connector hole otherwise you could damage the sensor/circuit.
+> Tip 5: Make sure the pins go into the appropriate connector hole otherwise it may damage the sensor/circuit.
+
+You are now ready for mechanical assembly.
 
 
 ## Mechanical Assembly
 
 ### ADS1115 risers
 
-![ADSrisers](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/adsrisers.jpg)
+![ADSrisers](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/adsrisers.jpg "Fig 5.1: ADS1115 risers")
 
 Start by inserting a 10mm riser in each mounting hole of the ADS1115 with a 3mm washer underneath it (as shown in the picture). Fasten them by threading a nut on the end of the riser and tightening it. Then from the bottom side of the PCB thread a screw into the riser through the 2 mounting holes and tighten them. Careful not to overtighten anything as the risers are only plastic.
 
 ### PCB risers
 
-![PCBrisers](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/pcbrisers.JPG)
+![PCBrisers](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/pcbrisers.JPG "Fig 5.2: PCB risers")
 
-Next insert a 10mm riser into each outer mounting hole on the PCB with a 3mm washer underneath it (as shown in the picture). Fastern them by threading aa nut onto the end of the riser and tightening it. Careful not to overtighten as the risers are only plastic.
+Next insert a 10mm riser into each outer mounting hole on the PCB with a 3mm washer underneath it (as shown in the picture). Fastern them by threading a nut onto the end of the riser and tightening it. Careful not to overtighten as the risers are only plastic.
 
-Now that the ADC is mounted to the PCB and the PCB has its own risers; you are ready to install it onto the Raspberry Pi. Place the PCB onto the Raspberry Pi by lining up the 9 pin header with pins 1, 3, 5, 7, 9, 11, 13, 15, and 17. Press straight down gently on the header to fully seat the PCB onto the Pi.
+Now that the ADC is mounted to the PCB and the PCB has its own risers; you are ready to install it onto the Raspberry Pi. Place the PCB onto the Raspberry Pi by lining up the 9 pin header with pins 1, 3, 5, 7, 9, 11, 13, 15, and 17 on the Pi. Press straight down gently on the header to fully seat the PCB onto the Pi.
 
 ### Thread acrylic
 
-![acrylicthreads](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/acrylicthreads.JPG)
+![acrylicthreads](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/acrylicthreads.JPG "Fig 5.3: Acrylic holes to tap")
 
 Before mounting anything to the bottom layer of acrylic, use the M5 x 0.8 tap + handle to tap/thread these 4 holes (outlined in red). 
 
@@ -241,49 +245,49 @@ Before mounting anything to the bottom layer of acrylic, use the M5 x 0.8 tap + 
 
 ### Mount Pi
 
-![Piscrews](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/piscrews.JPG) ![Piwashers](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/piwashers.JPG) ![Pinuts](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/pinuts.JPG)
+![Piscrews](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/piscrews.JPG "Fig 5.4: Pi mounting screws") ![Piwashers](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/piwashers.JPG "Fig 5.5: Pi spacers/washers") ![Pinuts](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/pinuts.JPG "Fig 5.6: Pi mounting nuts")
 
-Place a M2.5 x 10mm screw through each of the Pi mounting holes in the acrylic (first image circled in red). Place the acrylic bottom down with the bolt heads against the table (this will hold them in place). Place three 3mm washers onto each bolt on top of the acrylic (similar to the second image). Then line up the Pi over the bolts and lower it on to them (audio/video ports should face outside edge). Thread a nut onto the two bolts closest to the ethernet/USB ports and tighten them (third image). Carefully prop the unit up on its side, ensuring the outer 2 mounting bolts stay in their holes (as they are threaded in yet). Use the 1.5mm allen key to tighten up the outer 2 mounting bolts from underneath the acrylic (don't overtighten as they are threading into the plastic risers).
+Place an M2.5 x 10mm screw through each of the Pi mounting holes in the acrylic (first image circled in red). Lie the acrylic bottom down with the bolt heads against the table (the bolt threads should be facing upward). Place three 3mm washers onto each bolt on top of the acrylic (similar to the second image). Then line up the Pi over the bolts and lower it on to them (audio/video ports should face outside edge). Thread a M2.5 nut onto the two bolts closest to the ethernet/USB ports and tighten them (third image). Carefully prop the unit up on its side, ensuring the other 2 mounting bolts stay in their holes (as they are not threaded in yet). Use the 1.5mm allen key to tighten up the other 2 mounting bolts from underneath the acrylic (don't overtighten as they are threading into the plastic risers).
 
 ### Mount motor
 
-![motorscrews](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/motorscrews.JPG) ![motornuts](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/motornuts.JPG)
+![motorscrews](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/motorscrews.JPG "Fig 5.7: Motor mounting screws") ![motornuts](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/motornuts.JPG "Fig 5.8: Motor mounting nuts")
 
-Install the included rubber mounts onto the motor body. Place the motor onto the acrylic base. Insert a M3 x 0.5 x 16mm screw with a 3mm washer into each mounting hole (as circled in red). Then thread a nut onto the bottom of each screw from underneath. Hold the nut with you fingers while using the 2.5mm allen key to tighten them. The motor mounts are only rubber so do not overtighten/compress the rubber.
+Install the included rubber mounts onto the motor body. Place the motor onto the acrylic base. Insert a M3 x 0.5 x 16mm screw with a 3mm washer into each mounting hole (first image circled in red). Then thread a nut onto the bottom of each screw from underneath (second image circled in red). Hold the nut with you fingers while using the 2.5mm allen key to tighten them. The motor mounts are only rubber so do not overtighten/compress the rubber.
 
 ### Install case fan
 
-![fanscrews](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/fanscrews.JPG)
+![fanscrews](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/fanscrews.JPG "Fig 5.9: Case fan screws")
 
-Line up the fan with the acrylic top cover with the "cage" part of the fan facing down (this will ensure air is pulled in). Then use the Philips #2 screwdriver thread the fan screws into the fan. Snug the screws down but do not overtighten as the acrylic will crack.
+Place the fan against acrylic top cover with the "cage" part of the fan facing down (this will ensure air is pulled in). Then use the Philips #2 screwdriver thread the fan screws into the fan (circled in red). Lightly tighten the screws but do not overtighten as the acrylic may crack.
 
 ### Assemble case
 
-![caselayers](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/caselayers.jpg) ![PCBnotch](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/pcbnotch.JPG) ![casebolts](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/casebolts.jpg)
+![caselayers](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/caselayers.jpg "Fig 5.10: Layers of the case") ![PCBnotch](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/pcbnotch.JPG "Fig 5.11: Notch for fan power") ![casebolts](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/casebolts.jpg "Fig 5.12: Case fastening bolts")
 
-Assemble the case by fitting the 3D printed middle section (first image blue arrow) onto the acrylic base. Then plug the fan connector into the 5v and Ground on the Pi header where the notch was cut earlier (second image). Now place the acrylic top on top of th 3D printed middle section (first image red arrow). Finally, insert the four M5 x 0.8 x 40mm bolts through all three layers and begin threading into the bottom layer (third image in red). Tighten these bolts with the 4mm allen key (careful not to overtighten).
+Assemble the case by fitting the 3D printed middle section (first image red arrow) over the Pi and onto the acrylic base. Then plug the fan connector into 5v and Ground on the Pi header (where the notch was cut earlier - second image circled in red). Now place the acrylic top (first image blue arrow) onto the 3D printed middle section. Finally, insert the four M5 x 0.8 x 40mm bolts through all three layers and thread them into the bottom layer (third image circled in red). Tighten these bolts with the 4mm allen key (careful not to overtighten).
 
 ### Plug in connectors
 
-![connectors](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/connectors.JPG)
+![connectors](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/connectors.JPG "Fig 5.13: Molex plug in location")
 
-Now that the case is complete we can add the sensor and effector. Plug the 3 pin soil sensor into the center connector on the PCB (circled in red). Then plug the motor connector into the remaining connector on the PCB (circled in blue).
+Now that the case is assembled we can add the sensor and effector. Plug the 3 pin soil sensor into the center connector on the PCB (circled in red). Then plug the motor connector into the remaining connector on the PCB (circled in blue).
 
 ### Water lines
 
-![waterlines](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/waterlines.jpg)
+![waterlines](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/waterlines.jpg "Fig 5.14: Water line attachment")
 
 Using the diagonal cutters, cut the clear vinyl tubing into 2 equal length pieces (around 2 ft each). Push the end of a tube onto each water pump barb as shown in the image above.
 
 ### Spray nozzle
 
-![waternozzle](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/waternozzle.jpg)
+![waternozzle](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/mechanical/waternozzle.jpg "Fig 5.15: Spray nozzle setup")
 
-Thread the 1/4" barb to 3/8" NPT fitting into the spray nozzle threads. Tighten these together firmly to prevent leaks. See above image for reference.
+Thread the 1/4" barb to 3/8" NPT brass fitting into the spray nozzle threads. Tighten these together firmly to prevent leaks. See above image for reference.
 
-Look on the face of the water pump (where the tubes connect) and find out which tube is labelled "IN" and which is "OUT". Then push the barbed end of the nozzle into the end of the "OUT" tube (as shown in the image above).
+Look on the face of the water pump (where the tubes connect) and note which tube is labelled "IN" and which is "OUT". Then push the barbed end of the nozzle into the open end of the "OUT" tube (as shown in the image above).
 
-We are now ready to test and then power up.
+You are now ready to power up.
 
 
 ## Power Up
