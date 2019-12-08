@@ -122,7 +122,7 @@ This project features a capacitive soil moisture sensor for monitoring soil cond
 
 ## Time Commitment
 
-Time required to complete this project is approximately: **12 - 16 hours** continuous work (depending on your skill level), or 2 work days.
+Time required to complete this project is approximately: **12 - 16 hours** (continuous work), or 2 work days. This varies depending on skill level.
 
 It is best to approach this project with mild/moderate experience in electronics and circuits, tools and assembly, and computers. However, my aim is to make this guide thorough enough for people of all experience levels.
 
