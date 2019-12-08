@@ -60,7 +60,9 @@ This project features a capacitive soil moisture sensor for monitoring soil cond
 
 | Part/Material                         | Part Number   | Supplier                               | Qty    | Approx. Cost     |
 |---------------------------------------|---------------|----------------------------------------|:------:|-----------------:|
-| Raspberry Pi 4 starter kit            | CAN123        | CanaKit (Amazon)                       | 1      | $134.99          |
+| Raspberry Pi 4 starter kit <br>
+  (includes power supply, HMDI, <br>
+  SD card, and card reader)             | CAN123        | CanaKit (Amazon)                       | 1      | $134.99          |
 | Capacitive Soil Moisture sensor       | EK1940        | Gikfun (Amazon)                        | 1      | $8.48            |
 | Mini Diaphragm Pump                   | EK1856C       | Gikfun (Amazon)                        | 1      | $11.67           |
 | ADS1115 (or ADS1015)                  | 4260474032037 | Universal Solder (Amazon)              | 1      | $7.89            |
