@@ -381,7 +381,7 @@ nano simpletest.py
 
 The program should start up in the terminal. You will see the readings of the 4 ADS1115 channels displayed in a table. See the picture below as an example:
 
-![readings](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/intro/readings.jpg Fig 7.1: Test readings")
+![readings](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/intro/readings.jpg "Fig 7.1: Test readings")
 
 The soil sensor values are shown in the first column. In dry air the sensor should read around 24,000. Test the senor by placing it into the glass of water. You should see these readings drop down below 15,000. Repeat this a few times to ensure things are working well.
 
