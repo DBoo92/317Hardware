@@ -93,9 +93,9 @@ This project features a capacitive soil moisture sensor for monitoring soil cond
 
 | Part                  | Source file                                                                                       | Approx. Cost   |
 |-----------------------|---------------------------------------------------------------------------------------------------|-------:|
-| PCB manufacturing     | [PCB file](https://github.com/DBoo92/317Hardware/blob/master/electronics/SoilMoisture_Gerber.zip)| $20.00 |
+| PCB manufacturing     | [PCB file](https://github.com/DBoo92/317Hardware/blob/master/electronics/SoilMoisture_Gerber.zip) | $20.00 |
 | 3D printing           | [3D file](https://github.com/DBoo92/317Hardware/blob/master/mechanical/ProjectBoxMiddleRPI.stl)   | $15.00 |
-| Acrylic laser cutting | [Acrylic Top](https://github.com/DBoo92/317Hardware/blob/master/mechanical/CaseTop.cdr) <br>                                             [Acrylic Bottom](https://github.com/DBoo92/317Hardware/blob/master/mechanical/CaseBottom.cdr)     | $10.00 |
+| Acrylic laser cutting | [Acrylic Top](https://github.com/DBoo92/317Hardware/blob/master/mechanical/CaseTop.cdr) <br>                                             [Acrylic Bottom](https://github.com/DBoo92/317Hardware/blob/master/mechanical/CaseBottom.cdr)                               | $10.00 |
 
 > Tip 1: If you haven't already ordered/received the custom parts above, please find a PCB manufacturer, 3D print shop, and a laser cutting shop. Use the source files above and have these parts made before beginning your project.
 
@@ -109,7 +109,7 @@ This project features a capacitive soil moisture sensor for monitoring soil cond
 | Heat gun (or blow dryer)   |
 | Digital Multimeter         |
 | M5 x 0.8 tap + handle      |
-| Square file                |
+| Small square file          |
 | 4mm allen key              |
 | 2.5mm allen key            |
 | 1.5mm allen key            |
@@ -192,7 +192,7 @@ Place the soil sensor molex connector (circled in red) into its mounting holes f
 
 Bend the pins from underneath to hold it in place. Solder each pin from underneath the board (second image circled in red).
 
-For the motor molex connector, cut off or bend flat the bottom pin (blue circle on the third image) as it will interfere with mounting and is unused. Place the connector into its mounting holes from the top of the board (first image circled in blue). Solder the two pins from underneath the board (second image circled in blue).
+For the motor molex connector, cut off or bend flat the bottom pin (third image circled in blue) as it will interfere with mounting and is unused. Place the connector into its mounting holes from the top of the board (first image circled in blue). Solder the two pins from underneath the board (second image circled in blue).
 
 #### 7. ADC and Pi Headers
 
@@ -203,6 +203,14 @@ If you haven't already, now is the time to cut your headers to size. You will ne
 Push the 4 pin header onto the Vcc, Gnd, SDA, and SCL pins of the ADS1115. Push the 2 pin header onto the A0 and A1 pins of the ADS1115. Place the headers into their mounting holes from the top of the PCB (first image circled in red) and ensure that the pins stick out the bottom. Flip the PCB over so it is now resting on the ADS1115. Prop up the PCB so it is parallel and square with the ADS1115. Solder the the header pins on the bottom side of the board (second image circled in red).
 
 Push the 9 pin header onto your Raspberry Pi so it sits on pins 1, 3, 5, 7, 9, 11, 13, 15, and 17. Now place the entire PCB (bottom down) onto the 9 pin header (the pins should stick out the top of the PCB - first image circled in blue). Prop up the PCB so it is parallel and square with the Raspberry Pi. Solder the two outermost pins from the top side of the board (third image circled in blue). Now remove the PCB from the Pi with the 9 pin header attached. Finish soldering the other 7 pins from the top side of the board.
+
+#### 8. PCB notch
+
+![PCBnotch](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/pcb/pcbnotch.JPG "Fig 5.11: Notch for fan power")
+
+Use the small square file to cut a notch in the PCB beside the first 3 header pins. Copy the notch in the image above. This will allow us access to the Pi's 5v and Gnd to plug in the case fan.
+
+Now that you have completed the PCB, it is advised to run a couple quick tests:
 
 > Test 1: It is recommended to do continuity tests on side-by-side solder joints or any connections that look close to each other/touching. This is a precaution to help ensure there are no shorts between solder joints.
 
@@ -411,7 +419,7 @@ And use this command to run the new program:
 nano readingsupdated.py
 ```
 
-Remember that the sensor is in the (hopefully) moist soil, so the water should not turn on. If the water does turn on initially, it just means the soil readings are dry. If the water doesn't turn on, you may wait for the moisture levels to drop to turn the pump on (which will take a while). Or you can test the pump by simply removing the sensor from the soil. This will expose the sensor to dry air, which should then trigger the pump to turn on. See the video below for an example:
+Remember that the sensor is in the (hopefully) moist soil, so the water should not turn on. If the water does turn on initially, it just means the soil readings are dry. If the water doesn't turn on, you may wait for the moisture levels to drop to turn the pump on (which will take a while). Or you can test the pump by simply removing the sensor from the soil. This will expose the sensor to dry air, which should then trigger the pump to turn on. See the video below as an example:
 
 Fully functioning system:
 [![ReadingsVideo](https://raw.githubusercontent.com/DBoo92/317Hardware/master/images/pi%20%26%20readings/vidscreenshot.png)](https://youtu.be/7LPlyvlskEI "CENG 317 soil readings")
