@@ -85,7 +85,7 @@ The BME 680 and PT100 sensors are being covered by my group members, Ryan and Ai
 
 | Part                  | Source file                                                                                       | Cost   |
 |-----------------------|---------------------------------------------------------------------------------------------------|-------:|
-| PCB manufacturing     | [PCB file](hhttps://github.com/DBoo92/317Hardware/blob/master/electronics/SoilMoisture_Gerber.zip)| $20.00 |
+| PCB manufacturing     | [PCB file](https://github.com/DBoo92/317Hardware/blob/master/electronics/SoilMoisture_Gerber.zip)| $20.00 |
 | 3D printing           | [3D file](https://github.com/DBoo92/317Hardware/blob/master/mechanical/ProjectBoxMiddleRPI.stl)   | $15.00 |
 | Acrylic laser cutting | [Acrylic Top](https://github.com/DBoo92/317Hardware/blob/master/mechanical/CaseTop.cdr) <br>                                             [Acrylic Bottom](https://github.com/DBoo92/317Hardware/blob/master/mechanical/CaseBottom.cdr)     | $10.00 |
 
