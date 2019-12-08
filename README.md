@@ -93,9 +93,9 @@ This project features a capacitive soil moisture sensor for monitoring soil cond
 
 | Part                  | Source file                                                                                       | Approx. Cost   |
 |-----------------------|---------------------------------------------------------------------------------------------------|-------:|
-| PCB manufacturing     | [PCB file](https://github.com/DBoo92/317Hardware/blob/master/electronics/SoilMoisture_Gerber.zip) | $20.00 |
-| 3D printing           | [3D file](https://github.com/DBoo92/317Hardware/blob/master/mechanical/ProjectBoxMiddleRPI.stl)   | $15.00 |
-| Acrylic laser cutting | [Acrylic Top](https://github.com/DBoo92/317Hardware/blob/master/mechanical/CaseTop.cdr) <br>                                             [Acrylic Bottom](https://github.com/DBoo92/317Hardware/blob/master/mechanical/CaseBottom.cdr)                               | $10.00 |
+| PCB manufacturing     | [PCB gerber files](https://github.com/DBoo92/317Hardware/blob/master/electronics/SoilMoisture_Gerber.zip) | $20.00 |
+| 3D printing           | [3D .stl file](https://github.com/DBoo92/317Hardware/blob/master/mechanical/ProjectBoxMiddleRPI.stl)| $15.00 |
+| Acrylic laser cutting | [Acrylic Top cut file](https://github.com/DBoo92/317Hardware/blob/master/mechanical/CaseTop.cdr) <br>                                             [Acrylic Bottom cut file](https://github.com/DBoo92/317Hardware/blob/master/mechanical/CaseBottom.cdr)                               | $10.00 |
 
 > Tip 1: If you haven't already ordered/received the custom parts above, please find a PCB manufacturer, 3D print shop, and a laser cutting shop. Use the source files above and have these parts made before beginning your project.
 
@@ -103,6 +103,8 @@ This project features a capacitive soil moisture sensor for monitoring soil cond
 
 | Tool                       | 
 |----------------------------|
+| HDMI monitor/TV            |
+| USB mouse and keyboard     |
 | Soldering iron             |
 | Wire strippers             |
 | Diagonal cutting pliers    |
