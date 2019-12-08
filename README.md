@@ -1,5 +1,6 @@
 # 317Hardware
 
+
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -36,6 +37,7 @@
 - [Conclusion](#conclusion)
 
 
+
 ## Introduction
 
 Welcome to my CENG 317 hardware project page. The aim of this project is to create a system for monitoring greenhouse conditions using a Broadcom development platform and various sensors/effectors. Here is a diagram of the proposed systemm:
@@ -49,6 +51,7 @@ The BME 680 and PT100 sensors are being covered by my group members, Ryan and Ai
 ![soilmoisture](https://raw.githubusercontent.com/DBoo92/317Hardware/master/readme_images/intro/caseabove.jpg)
 
 This project features a capacitive soil moisture sensor for monitoring soil conditions, a pump/irrigation system for watering the plant/soil, and a watering level switch for selecting the amount of water to be dispersed to the plant. 
+
 
 
 ## Bill of Materials
@@ -114,11 +117,13 @@ This project features a capacitive soil moisture sensor for monitoring soil cond
 | X-Acto knife               |
 
 
+
 ## Time Commitment
 
 Time required to complete this project is approximately: **15 - 18 hours** (continuous work), or 2 work days.
 
 It is best to approach this project with mild/moderate experience in electronics and circuits, tools and assembly, and computers. However, my aim is to make this guide thorough enough for people of all experience levels.
+
 
 
 ## PCB/Soldering
@@ -224,6 +229,7 @@ Cut the stock connector off the soil sensor using the diagonal cutters. Make you
 You are now ready for mechanical assembly.
 
 
+
 ## Mechanical Assembly
 
 ### ADS1115 risers
@@ -295,6 +301,7 @@ Look on the face of the water pump (where the tubes connect) and note which tube
 You are now ready to power up.
 
 
+
 ## Power Up
 
 > Tip 6: If you haven't already, please complete the 2 tests listed at the bottom of the PCB soldering section. These will help ensure that no damage is done to your Pi during initial power up.
@@ -339,6 +346,7 @@ sudo python setup.py install
 You now have the necessary libraries and some sample code to work with.
 
 
+
 ## Unit Testing
 
 I suggest testing the sensor and watering level switch first without the motor functionality. This way it is easier to troubleshoot if you run into problems.
@@ -379,7 +387,6 @@ The motor should be connected to the PCB and the water hoses connected to the mo
 
 If all three components are working correctly you are ready to proceed to the full system test.
 
-
 ### Full system test
 
 Now you are ready to test the complete system. Ensure that the sensor and motor are connected to the PCB, and the water hoses are connected to the motor. Plug the 6 - 12v power supply into the wall and insert the 2.1mm plug into the DC jack on the PCB. Go outside and fill a pot/cup with soil. Place the soil sensor into the soil (not past the warning line), point the sprayer nozzle toward the soil (but away from the sensor), and put the "IN" hose in a bottle of water.
@@ -416,6 +423,7 @@ Test these variations out a few times to ensure everything is working. You can e
 **If you've ran all these tests and everything is working as described - then congratulations! You have succesfully completed the soil moisture sensor project!**
 
 
+
 ## Production Testing
 
 There are a couple steps to my production testing methods.
@@ -443,7 +451,9 @@ This enables us to test the entire system and ensure that all features are funct
 This gives us fairly good quality control, while also balancing cost and not testing units so frequently.
 
 
+
 ## Conclusion
 
 Thank you for taking the time to read and review my project. I hope it was informative and helpful for you. Please feel free to try it out yourself.
+
 
